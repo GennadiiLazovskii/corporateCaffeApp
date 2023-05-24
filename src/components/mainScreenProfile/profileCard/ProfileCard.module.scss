@@ -56,6 +56,10 @@
         display: flex;
         width: 100px;
         align-items: stretch;
+        img {
+            width: 25px;
+            height: 25px;
+        }
         p {
             font-family: 'Noto Sans';
             font-style: normal;
@@ -104,6 +108,11 @@
         img {
             width: 24px;
             height: 24px;
+        }
+        p {
+            display: flex;
+            width: 215px;
+            margin-left: 13px;
         }
     }
 }

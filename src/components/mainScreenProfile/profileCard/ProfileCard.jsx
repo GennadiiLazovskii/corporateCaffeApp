@@ -31,43 +31,43 @@ const ProfileCard = () => {
                     <div className={styles.imgWrap}>
                         <img src={Menu} alt="Menu" />
                     </div>
-                    Main
+                    <p>Main</p>
                 </button>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Profile} alt="Profile" />
                     </div>
-                    Profile
+                    <p>Profile</p>
                 </button>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Trophy} alt="Achievement" />
                     </div>
-                    Achievement
+                    <p>Achievement</p>
                 </button>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Rating} alt="Rating" />
                     </div>
-                    Rating
+                    <p>Rating</p>
                 </button>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Test} alt="Test" />
                     </div>
-                    Testing
+                    <p>Testing</p>
                 </button>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Book} alt="Library" />
                     </div>
-                    Library
+                    <p>Library</p>
                 </button>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Shop} alt="Shop" />
                     </div>
-                    Shop
+                    <p>Shop</p>
                 </button>
             </div>
         </div>
