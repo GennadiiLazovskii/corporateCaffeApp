@@ -1,13 +1,15 @@
 import styles from './MainScreanProfile.module.scss';
-import ProfileCard from './profileCard/ProfileCard.jsx';
-import UserGoal from './userGoal/UserGoal';
+import UserAchievements from './userAchievements/UserAchievements';
+// import ProfileCard from './profileCard/ProfileCard.jsx';
+// import UserGoal from './userGoal/UserGoal';
 
 const MainScreanProfile = () => {
 
     return(
         <div className={styles.mainScreanProfile}>
-            <ProfileCard/>
-            <UserGoal/>
+            {/* <ProfileCard/>
+            <UserGoal/> */}
+            <UserAchievements/>
         </div>
     )
 }
