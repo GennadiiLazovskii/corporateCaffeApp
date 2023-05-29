@@ -14,7 +14,7 @@ const MainScreanProfile = () => {
                 <UserGoal/>
                 <UserAchievements/>
             </div>
-            <div>
+            <div className={styles.mainScreanProfileRight}>
                 <UserTotalKarma/>
                 <UserWishes/>
             </div>
