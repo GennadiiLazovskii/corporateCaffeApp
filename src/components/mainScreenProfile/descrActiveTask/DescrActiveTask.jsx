@@ -1,15 +1,11 @@
 import styles from "./DescrActiveTask.module.scss";
 import UserAchievements from "../userAchievements/UserAchievements";
-import Cross from "../../../img/header/cross.png";
+import ButtonExit from "../../buttonExit/ButtonExit";
 
 const DescrActiveTask = () => {
     return (
         <div className={styles.DescrActiveTaskWrap}>
-            <div className={styles.DescrActiveTaskBtn}>
-                <button>
-                    <img src={Cross} alt="Exit" />
-                </button>
-            </div>
+            <ButtonExit/>
             <UserAchievements />
             <div className={styles.DescrActiveTaskDescr}>
                 <p>
