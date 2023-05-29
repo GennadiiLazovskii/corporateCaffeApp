@@ -10,14 +10,14 @@ const MainScreanProfile = () => {
     return(
         <div className={styles.mainScreanProfile}>
             <ProfileCard/>
-            {/* <div className={styles.mainScreanProfileCenter}>
+            <div className={styles.mainScreanProfileCenter}>
                 <UserGoal/>
                 <UserAchievements/>
             </div>
             <div>
                 <UserTotalKarma/>
                 <UserWishes/>
-            </div> */}
+            </div>
         </div>
     )
 }
