@@ -1,13 +1,14 @@
 .userTotalKarma {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 320px;
     // height:  260px;
-    padding-top: 40px;
     background-color: #F9F9FF;
     border-radius: 10px;
+    margin-bottom: 20px;
     .userTotalKarmaHead {
+        margin-top: 40px;
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 600;
