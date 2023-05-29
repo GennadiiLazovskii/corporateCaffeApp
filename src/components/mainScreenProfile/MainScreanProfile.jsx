@@ -11,7 +11,7 @@ const MainScreanProfile = () => {
 
     return(
         <div className={styles.mainScreanProfile}>
-            {/* <ProfileCard/>
+            <ProfileCard/>
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal/>
                 <UserAchievements/>
@@ -19,9 +19,9 @@ const MainScreanProfile = () => {
             <div className={styles.mainScreanProfileRight}>
                 <UserTotalKarma/>
                 <UserWishes/>
-            </div> */}
+            </div>
                 {/* <DescrActiveTask/> */}
-                <ContestMonth/>
+                {/* <ContestMonth/> */}
         </div>
     )
 }

@@ -1,0 +1,90 @@
+.userAchievementsAward {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 570px;
+        height: 112px;
+        margin-bottom: 20px;
+        background: rgba(114, 101, 251, 0.1);
+        border-radius: 10px;
+    }
+    .userAchievementsNumber {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(180deg, #ACA4FF 0%, #8478FF 0.01%, #5B4BFF 99.98%);
+        border-radius: 12px;
+        p {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+    }
+    .userAchievementsTask {
+        width: 128px;
+        height: 60px;
+        p {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            color: #1E1584;
+        }
+    }
+    .userAchievementsBonus {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        width: 125px;
+        height: 65px;
+        .userAchievementsBonusCrown {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+            p {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                color: #1E1584;
+            }
+        }
+        .userAchievementsBonusKarma {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+            p {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                color: #1E1584;
+            }
+        }
+        .userAchievementsDate {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            text-align: center;
+            color: #1E1584;
+        }
+    }
