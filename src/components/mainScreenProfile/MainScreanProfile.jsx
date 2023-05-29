@@ -5,6 +5,7 @@ import UserGoal from './userGoal/UserGoal';
 import UserTotalKarma from './userTotalKarma/UserTotalKarma';
 import UserWishes from './userWishes/UserWishes';
 import DescrActiveTask from './descrActiveTask/DescrActiveTask';
+import ContestMonth from './contestMonth/ContestMonth';
 
 const MainScreanProfile = () => {
 
@@ -19,7 +20,8 @@ const MainScreanProfile = () => {
                 <UserTotalKarma/>
                 <UserWishes/>
             </div> */}
-                <DescrActiveTask/>
+                {/* <DescrActiveTask/> */}
+                <ContestMonth/>
         </div>
     )
 }
