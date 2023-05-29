@@ -1,0 +1,164 @@
+.UserProfileWrap {
+    width: 900px;
+    height: 351px;
+    background: linear-gradient(180deg, #F9F9FF 0%, #FFFFFF 0%, #F2F1FF 100.05%);
+    border-radius: 12px;
+    padding: 50px 20px;
+    .UserProfileUser {
+        display: flex;
+    }
+    .UserProfileDescr {
+        display: flex;
+        align-items: center;
+        width: 350px;
+        height: 90px;
+    }
+    .UserProfileDescrImg {
+        display: flex;
+        img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+        }
+    }
+    .UserProfileDescrUser {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        .UserProfileDescrUserName {
+            p {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+                color: #1E1584;
+            }
+        }
+        .UserProfileDescrUserPosition {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            p {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 19px;
+                color: rgba(82, 78, 125, 0.8);
+            }
+            .UserProfileDescrUserPositionLvl {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 76px;
+                height: 28px;
+                background: #7265FB;
+                border-radius: 12px;
+                p {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .UserProfileMoney {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        p {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1E1584;
+        }
+        .UserProfileMoneyDescr {
+            width: 50%;
+            .UserProfileMoneyItem {
+            margin: 20px;
+            display: flex;
+                img {
+                    width: 26px;
+                    height: 26px;
+                }
+                p {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #1E1584;
+                }
+            }
+        }
+    }
+    .UserProfileKarma {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1E1584;
+        }
+        .UserProfileKarmaItem {
+            margin: 25px;
+            display: flex;
+            .UserProfileKarmaItMouth {
+                display: flex;
+                img {
+                    width: 26px;
+                    height: 26px;
+                }
+                p {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #1E1584;
+                }
+            }
+        }
+    }
+    .UserProfileSkills {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        .UserProfileSkillsText {
+            display: flex;
+            align-items: center;
+            margin: 16px;
+            h2 {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                color: #1E1584;
+                margin-right: 10px;
+            }
+            p {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 180%;
+                color: #1E1584;
+            }
+        }
+    }
+}
