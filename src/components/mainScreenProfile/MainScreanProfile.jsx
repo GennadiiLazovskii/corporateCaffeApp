@@ -4,12 +4,13 @@ import ProfileCard from './profileCard/ProfileCard.jsx';
 import UserGoal from './userGoal/UserGoal';
 import UserTotalKarma from './userTotalKarma/UserTotalKarma';
 import UserWishes from './userWishes/UserWishes';
+import DescrActiveTask from './descrActiveTask/DescrActiveTask';
 
 const MainScreanProfile = () => {
 
     return(
         <div className={styles.mainScreanProfile}>
-            <ProfileCard/>
+            {/* <ProfileCard/>
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal/>
                 <UserAchievements/>
@@ -17,7 +18,8 @@ const MainScreanProfile = () => {
             <div className={styles.mainScreanProfileRight}>
                 <UserTotalKarma/>
                 <UserWishes/>
-            </div>
+            </div> */}
+                <DescrActiveTask/>
         </div>
     )
 }
