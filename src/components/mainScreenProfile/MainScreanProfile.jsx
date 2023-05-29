@@ -3,6 +3,7 @@ import UserAchievements from './userAchievements/UserAchievements';
 import ProfileCard from './profileCard/ProfileCard.jsx';
 import UserGoal from './userGoal/UserGoal';
 import UserTotalKarma from './userTotalKarma/UserTotalKarma';
+import UserWishes from './userWishes/UserWishes';
 
 const MainScreanProfile = () => {
 
@@ -14,7 +15,8 @@ const MainScreanProfile = () => {
                 <UserAchievements/>
             </div> */}
             <div>
-                <UserTotalKarma/>
+                {/* <UserTotalKarma/> */}
+                <UserWishes/>
             </div>
         </div>
     )

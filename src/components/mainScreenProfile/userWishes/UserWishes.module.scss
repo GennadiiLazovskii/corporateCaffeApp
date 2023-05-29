@@ -1,0 +1,64 @@
+.userWishes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    height: 320px;
+    padding-top: 40px;
+    background-color: #F9F9FF;
+    border-radius: 10px;
+    p {
+        margin-bottom: 15px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #1E1584;
+    }
+    .userWishesImg {
+        width: 298px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 160px;
+            height: 100%;
+        }
+    }
+    .userWishesProgresWrap {
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(180deg, #ACA4FF 0%, #7B6FFF 0.01%, #5242FF 99.98%);
+        border-radius: 0px 0px 12px 12px;
+        .userWishesProgresWrapImg {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .userWishesProgresCollected {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 200px;
+            height: 60px;
+            margin-bottom: 15x;
+            p {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #FFFFFF;
+            }
+            .userWishesProgresCollectedItem {
+                width: 100%;
+                height: 30px;
+                display: flex;
+            }
+        }
+    }
+}
