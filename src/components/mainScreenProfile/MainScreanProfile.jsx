@@ -20,8 +20,8 @@ const MainScreanProfile = () => {
                 <UserTotalKarma/>
                 <UserWishes/>
             </div>
-                {/* <DescrActiveTask/> */}
-                {/* <ContestMonth/> */}
+                <DescrActiveTask/>
+                <ContestMonth/>
         </div>
     )
 }
