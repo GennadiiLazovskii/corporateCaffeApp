@@ -24,6 +24,7 @@ const UserProfile = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.line}></div>
                     <div className={styles.UserProfileMoney}>
                         <p>All the money</p>
                         <div className={styles.UserProfileMoneyDescr}>
@@ -33,6 +34,7 @@ const UserProfile = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.line}></div>
                     <div className={styles.UserProfileKarma}>
                         <h2>Karma</h2>
                         <div className={styles.UserProfileKarmaItem}>

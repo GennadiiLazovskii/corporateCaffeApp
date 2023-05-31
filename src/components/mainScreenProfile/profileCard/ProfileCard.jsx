@@ -9,7 +9,6 @@ import Test from '../../../img/user/test.png';
 import Trophy from '../../../img/user/trophy.png';
 import Profile from '../../../img/user/user.png';
 
-
 const ProfileCard = () => {
 
     return (

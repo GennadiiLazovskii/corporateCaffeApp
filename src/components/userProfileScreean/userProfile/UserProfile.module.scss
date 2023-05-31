@@ -133,7 +133,7 @@
         }
     }
     .UserProfileSkills {
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -160,5 +160,10 @@
                 color: #1E1584;
             }
         }
+    }
+    .line {
+        width: 1px;
+        height: 135px;
+        background: #524E7D;
     }
 }

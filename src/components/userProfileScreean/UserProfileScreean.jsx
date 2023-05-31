@@ -3,6 +3,8 @@ import styles from './UserProfileScreean.module.scss';
 import UserProfile from './userProfile/userProfile';
 
 const UserProfileScreean = () => {
+
+    console.log()
     return (
         <div className={styles.UserProfileScreean}>
             <ProfileCard/>
