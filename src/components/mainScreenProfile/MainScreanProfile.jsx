@@ -6,14 +6,19 @@ import UserTotalKarma from './userTotalKarma/UserTotalKarma';
 import UserWishes from './userWishes/UserWishes';
 import DescrActiveTask from './descrActiveTask/DescrActiveTask';
 import ContestMonth from './contestMonth/ContestMonth';
-import {useState} from 'react'
+import { useState } from 'react'
 
 const MainScreanProfile = () => {
-    const [showContest, setShowContest] = useState(false);
 
-    const handleShowContest = () => {
-        setShowContest(true);
+    const [openContestMonth, setOpenContestMonth] = useState(false);
+
+    const showContestMonth = () => {
+        setOpenContestMonth(true);
     };
+
+    const hideContestMonth = () => {
+        setOpenContestMonth(false)
+    }
 
     return (
         <div className={styles.mainScreanProfile}>
@@ -23,10 +28,17 @@ const MainScreanProfile = () => {
                 <UserAchievements />
             </div>
             <div className={styles.mainScreanProfileRight}>
-                <UserTotalKarma showContestMonth={handleShowContest} />
+                <UserTotalKarma showContestMonth={showContestMonth} />
                 <UserWishes />
             </div>
-            {showContest && <ContestMonth />}
+            {openContestMonth && (
+                <div className={styles.contestMonthContainer}>
+                    <div className={styles.blurBackground} />
+                    <div className={styles.contestMonth}>
+                        <ContestMonth hideContestMonth={hideContestMonth} />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

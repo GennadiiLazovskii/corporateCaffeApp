@@ -11,7 +11,7 @@ const UserAchievements = () => {
                 <p>Progress</p>
                 <p>Time</p>
             </div>
-            <ListAchievements/>
+            <ListAchievements />
         </div>
     )
 }

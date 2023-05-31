@@ -4,10 +4,10 @@ import Karma from "../../../img/user/karma.png"
 import HeroPrize from "../../../img/Prize/airpoods.png";
 import TeamPrize from "../../../img/Prize/popcorn.png";
 
-const ContestMonth = () => {
+const ContestMonth = ({hideContestMonth}) => {
     return (
         <div className={styles.contestMonth}>
-            <ButtonExit />
+            <ButtonExit hideContestMonth={hideContestMonth}/>
             <div className={styles.contestMonthHeader}>
                 <img src={Karma} alt="Karma" />
                 <p>Prize of the month</p>
