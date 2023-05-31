@@ -1,0 +1,51 @@
+.userStatisticsWrap {
+    width: 900px;
+    height: 230px;
+    background: linear-gradient(180deg, #F9F9FF 0%, #FFFFFF 0%, #F2F1FF 100.05%);
+    border-radius: 12px;
+    padding: 32px 20px;
+    .userStatisticsHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #1E1584;
+    }
+    .userStatisticsItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 19px;
+    }
+    .userStatisticsDescr {
+        height: 112px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h2 {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 54px;
+            color: #1E1584;
+        }
+        p {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            color: #1E1584;
+        }
+    }
+    .line {
+        width: 1px;
+        height: 135px;
+        background: #524E7D;
+    }
+}
