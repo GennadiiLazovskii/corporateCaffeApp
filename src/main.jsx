@@ -9,7 +9,7 @@ import UserProfileScreean from './components/userProfileScreean/UserProfileScree
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header/>
-    {/* <MainScreanProfile/> */}
-    <UserProfileScreean/>
+    <MainScreanProfile/>
+    {/* <UserProfileScreean/> */}
   </React.StrictMode>,
 )

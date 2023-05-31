@@ -6,24 +6,29 @@ import UserTotalKarma from './userTotalKarma/UserTotalKarma';
 import UserWishes from './userWishes/UserWishes';
 import DescrActiveTask from './descrActiveTask/DescrActiveTask';
 import ContestMonth from './contestMonth/ContestMonth';
+import {useState} from 'react'
 
 const MainScreanProfile = () => {
+    const [showContest, setShowContest] = useState(false);
 
-    return(
+    const handleShowContest = () => {
+        setShowContest(true);
+    };
+
+    return (
         <div className={styles.mainScreanProfile}>
-            <ProfileCard/>
+            <ProfileCard />
             <div className={styles.mainScreanProfileCenter}>
-                <UserGoal/>
-                <UserAchievements/>
+                <UserGoal />
+                <UserAchievements />
             </div>
             <div className={styles.mainScreanProfileRight}>
-                <UserTotalKarma/>
-                <UserWishes/>
+                <UserTotalKarma showContestMonth={handleShowContest} />
+                <UserWishes />
             </div>
-                <DescrActiveTask/>
-                <ContestMonth/>
+            {showContest && <ContestMonth />}
         </div>
-    )
-}
+    );
+};
 
 export default MainScreanProfile;
