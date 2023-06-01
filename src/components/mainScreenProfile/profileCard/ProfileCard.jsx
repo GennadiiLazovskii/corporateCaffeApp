@@ -9,7 +9,7 @@ import Test from '../../../img/user/test.png';
 import Trophy from '../../../img/user/trophy.png';
 import Profile from '../../../img/user/user.png';
 
-const ProfileCard = () => {
+const ProfileCard = ({showProfileScreean}) => {
 
     return (
         <div className={styles.profileWrap}>
@@ -32,7 +32,7 @@ const ProfileCard = () => {
                     </div>
                     <p>Main</p>
                 </button>
-                <button>
+                <button onClick={showProfileScreean}>
                     <div className={styles.imgWrap}>
                         <img src={Profile} alt="Profile" />
                     </div>

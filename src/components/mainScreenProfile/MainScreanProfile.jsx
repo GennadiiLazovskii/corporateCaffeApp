@@ -8,7 +8,7 @@ import DescrActiveTask from './descrActiveTask/DescrActiveTask';
 import ContestMonth from './contestMonth/ContestMonth';
 import { useState } from 'react'
 
-const MainScreanProfile = () => {
+const MainScreanProfile = ({showProfileScreean}) => {
 
     const [openContestMonth, setOpenContestMonth] = useState(false);
     const [openDescrActiveTask, setDescrActiveTask] = useState(false)
@@ -26,13 +26,9 @@ const MainScreanProfile = () => {
         setDescrActiveTask(true);
     };
 
-    // const hideDescrActiveTask = () => {
-    //     setDescrActiveTask(false)
-    // }
-
     return (
         <div className={styles.mainScreanProfile}>
-            <ProfileCard />
+            <ProfileCard showProfileScreean={showProfileScreean} />
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal />
                 <UserAchievements showDescrActiveTask={showDescrActiveTask} />

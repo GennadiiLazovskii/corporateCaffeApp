@@ -5,7 +5,6 @@ import UserStatistics from './userStatistics/UserStatistics';
 
 const UserProfileScreean = () => {
 
-    console.log()
     return (
         <div className={styles.UserProfileScreean}>
             <ProfileCard/>
