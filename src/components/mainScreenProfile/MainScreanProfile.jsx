@@ -11,21 +11,31 @@ import { useState } from 'react'
 const MainScreanProfile = () => {
 
     const [openContestMonth, setOpenContestMonth] = useState(false);
+    const [openDescrActiveTask, setDescrActiveTask] = useState(false)
 
     const showContestMonth = () => {
         setOpenContestMonth(true);
     };
 
-    const hideContestMonth = () => {
+    const hideModal = () => {
         setOpenContestMonth(false)
+        setDescrActiveTask(false)
     }
+
+    const showDescrActiveTask = () => {
+        setDescrActiveTask(true);
+    };
+
+    // const hideDescrActiveTask = () => {
+    //     setDescrActiveTask(false)
+    // }
 
     return (
         <div className={styles.mainScreanProfile}>
             <ProfileCard />
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal />
-                <UserAchievements />
+                <UserAchievements showDescrActiveTask={showDescrActiveTask} />
             </div>
             <div className={styles.mainScreanProfileRight}>
                 <UserTotalKarma showContestMonth={showContestMonth} />
@@ -35,7 +45,15 @@ const MainScreanProfile = () => {
                 <div className={styles.contestMonthContainer}>
                     <div className={styles.blurBackground} />
                     <div className={styles.contestMonth}>
-                        <ContestMonth hideContestMonth={hideContestMonth} />
+                        <ContestMonth hideModal={hideModal} />
+                    </div>
+                </div>
+            )}
+            {openDescrActiveTask && (
+                <div className={styles.contestMonthContainer}>
+                    <div className={styles.blurBackground} />
+                    <div className={styles.contestMonth}>
+                        <DescrActiveTask hideModal={hideModal}/>
                     </div>
                 </div>
             )}
