@@ -2,10 +2,10 @@ import styles from "./DescrActiveTask.module.scss";
 import UserAchievements from "../userAchievements/UserAchievements";
 import ButtonExit from "../../buttonExit/ButtonExit";
 
-const DescrActiveTask = ({hideModal}) => {
+const DescrActiveTask = ({handleHideModal}) => {
     return (
         <div className={styles.DescrActiveTaskWrap}>
-            <ButtonExit hideModal={hideModal}/>
+            <ButtonExit handleHideModal={handleHideModal}/>
             <UserAchievements />
             <div className={styles.DescrActiveTaskDescr}>
                 <p>

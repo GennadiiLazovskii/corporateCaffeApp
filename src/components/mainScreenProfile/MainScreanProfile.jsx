@@ -6,50 +6,55 @@ import UserTotalKarma from './userTotalKarma/UserTotalKarma';
 import UserWishes from './userWishes/UserWishes';
 import DescrActiveTask from './descrActiveTask/DescrActiveTask';
 import ContestMonth from './contestMonth/ContestMonth';
-import { useState } from 'react'
+import { modalReducer } from '../reducers/modalReducer';
+import { useReducer} from 'react'
+import { showContestMonth, showDescrActiveTask, hideModal } from '../actions/modalActions';
 
 const MainScreanProfile = ({showProfileScreean}) => {
 
-    const [openContestMonth, setOpenContestMonth] = useState(false);
-    const [openDescrActiveTask, setDescrActiveTask] = useState(false)
-
-    const showContestMonth = () => {
-        setOpenContestMonth(true);
-    };
-
-    const hideModal = () => {
-        setOpenContestMonth(false)
-        setDescrActiveTask(false)
+    const initialState = {
+        openContestMonth: false,
+        openDescrActiveTask: false,
     }
 
-    const showDescrActiveTask = () => {
-        setDescrActiveTask(true);
-    };
+    const [state, dispatch] = useReducer(modalReducer, initialState);
+
+    const handleShowContestMonth = () => {
+        dispatch(showContestMonth());
+    }
+
+    const handleShowDescrActiveTask = () => {
+        dispatch(showDescrActiveTask());
+    }
+
+    const handleHideModal = () => {
+        dispatch(hideModal());
+    }
 
     return (
         <div className={styles.mainScreanProfile}>
             <ProfileCard showProfileScreean={showProfileScreean} />
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal />
-                <UserAchievements showDescrActiveTask={showDescrActiveTask} />
+                <UserAchievements handleShowDescrActiveTask={handleShowDescrActiveTask} />
             </div>
             <div className={styles.mainScreanProfileRight}>
-                <UserTotalKarma showContestMonth={showContestMonth} />
+                <UserTotalKarma handleShowContestMonth={handleShowContestMonth} />
                 <UserWishes />
             </div>
-            {openContestMonth && (
+            {state.openContestMonth && (
                 <div className={styles.contestMonthContainer}>
                     <div className={styles.blurBackground} />
                     <div className={styles.contestMonth}>
-                        <ContestMonth hideModal={hideModal} />
+                        <ContestMonth handleHideModal={handleHideModal} />
                     </div>
                 </div>
             )}
-            {openDescrActiveTask && (
+            {state.openDescrActiveTask && (
                 <div className={styles.contestMonthContainer}>
                     <div className={styles.blurBackground} />
                     <div className={styles.contestMonth}>
-                        <DescrActiveTask hideModal={hideModal}/>
+                        <DescrActiveTask handleHideModal={handleHideModal}/>
                     </div>
                 </div>
             )}

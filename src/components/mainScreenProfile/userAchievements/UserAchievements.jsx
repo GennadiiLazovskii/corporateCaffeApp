@@ -1,7 +1,7 @@
 import styles from './UserAchievements.module.scss';
 import ListAchievements from '../listAchievements/ListAchievements';
 
-const UserAchievements = ({showDescrActiveTask}) => {
+const UserAchievements = ({handleShowDescrActiveTask}) => {
 
     return (
         <div className={styles.userAchievementsWrap}>
@@ -11,7 +11,7 @@ const UserAchievements = ({showDescrActiveTask}) => {
                 <p>Progress</p>
                 <p>Time</p>
             </div>
-            <ListAchievements showDescrActiveTask={showDescrActiveTask} />
+            <ListAchievements handleShowDescrActiveTask={handleShowDescrActiveTask} />
         </div>
     )
 }
