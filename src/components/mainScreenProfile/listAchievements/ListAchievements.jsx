@@ -5,7 +5,7 @@ import Karma from '../../../img/user/karma.png';
 
 const ListAchievements = ({handleShowDescrActiveTask}) => {
 
-    const progress = 30;
+    const progress = 34;
     
     return (
         <div className={styles.userAchievementsAward}>

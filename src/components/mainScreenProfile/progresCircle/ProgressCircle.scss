@@ -1,5 +1,3 @@
-// ProgressCircle.scss
-
 $circleSize: 100px; // Circle size in pixels
 
 .progress-circle {
@@ -29,19 +27,14 @@ $circleSize: 100px; // Circle size in pixels
         stroke: #26E27C;
         stroke-width: 10%;
         stroke-linecap: round;
-        stroke-dasharray: $circleSize;
-        animation: progress-circle-anim 1s ease-in-out forwards;
+        stroke-dasharray: calc(2 * 3.14159 * (#{$circleSize} / 2));
+        stroke-dashoffset: 0;
+        transform: rotate(-90deg);
+        transform-origin: center;
+        transition: stroke-dashoffset 0.3s ease-in-out;
     }
 
     &__label {
         position: absolute;
-    }
-
-    @keyframes progress-circle-anim {
-        to {
-            $circumference: 3.14159 * ($circleSize + $circleSize);
-            $progressSize: calc($circumference - ($circumference * #{var(--progress)} / 50));
-            stroke-dashoffset: $progressSize;
-        }
     }
 }
