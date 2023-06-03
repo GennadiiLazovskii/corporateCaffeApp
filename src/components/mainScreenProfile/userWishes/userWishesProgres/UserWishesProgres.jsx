@@ -2,6 +2,7 @@ import { FaCheck } from 'react-icons/fa';
 import './ProgressBar.scss';
 
 const UserWishesProgres = ({ progress }) => {
+    console.log(progress)
     return (
         <div className="progress-bar">
             <div className="progress-bar__fill" style={{ width: `${progress}%`, marginLeft: 0  }}>
