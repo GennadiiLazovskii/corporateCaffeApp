@@ -16,4 +16,4 @@ const UserProfileScreean = () => {
     )
 }
 
-export default UserProfileScreean
+export default UserProfileScreean;

@@ -1,16 +1,16 @@
 import styles from './MainScreanProfile.module.scss';
 import UserAchievements from './userAchievements/UserAchievements';
-import ProfileCard from './profileCard/ProfileCard.jsx';
+import ProfileCard from './profileCard/ProfileCard';
 import UserGoal from './userGoal/UserGoal';
 import UserTotalKarma from './userTotalKarma/UserTotalKarma';
 import UserWishes from './userWishes/UserWishes';
 import DescrActiveTask from './descrActiveTask/DescrActiveTask';
 import ContestMonth from './contestMonth/ContestMonth';
 import { modalReducer } from '../reducers/modalReducer';
-import { useReducer} from 'react'
+import { useReducer } from 'react'
 import { showContestMonth, showDescrActiveTask, hideModal } from '../actions/modalActions';
 
-const MainScreanProfile = ({showProfileScreean}) => {
+const MainScreanProfile = ({ handleShowMain, handleShowProfile }) => {
 
     const initialState = {
         openContestMonth: false,
@@ -30,10 +30,11 @@ const MainScreanProfile = ({showProfileScreean}) => {
     const handleHideModal = () => {
         dispatch(hideModal());
     }
+    
 
     return (
         <div className={styles.mainScreanProfile}>
-            <ProfileCard showProfileScreean={showProfileScreean} />
+            <ProfileCard handleShowMain={handleShowMain} handleShowProfile={handleShowProfile} />
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal />
                 <UserAchievements handleShowDescrActiveTask={handleShowDescrActiveTask} />
@@ -54,7 +55,7 @@ const MainScreanProfile = ({showProfileScreean}) => {
                 <div className={styles.contestMonthContainer}>
                     <div className={styles.blurBackground} />
                     <div className={styles.contestMonth}>
-                        <DescrActiveTask handleHideModal={handleHideModal}/>
+                        <DescrActiveTask handleHideModal={handleHideModal} />
                     </div>
                 </div>
             )}
