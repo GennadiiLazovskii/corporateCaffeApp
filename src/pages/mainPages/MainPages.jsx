@@ -7,6 +7,7 @@ import {
 import MainScreanProfile from "../../components/mainScreenProfile/mainScreanProfile";
 import UserProfileScreean from "../../components/userProfileScreean/UserProfileScreean";
 import styles from "./MainPages.module.scss";
+import MainLibrary from "../../components/userLibrary/mainLibrary/MainLibrary";
 
 const MainPages = () => {
 
@@ -36,7 +37,8 @@ const MainPages = () => {
                     handleShowProfile={handleShowProfile}
                 />
             )}
-            {state.openProfile && <UserProfileScreean />}
+            {/* {state.openProfile && <UserProfileScreean />} */}
+            {<MainLibrary/>}
         </div>
     );
 };
