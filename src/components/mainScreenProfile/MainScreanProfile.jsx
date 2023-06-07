@@ -10,7 +10,7 @@ import { modalReducer } from '../reducers/modalReducer';
 import { useReducer } from 'react'
 import { showContestMonth, showDescrActiveTask, hideModal } from '../actions/modalActions';
 
-const MainScreanProfile = ({ handleShowMain, handleShowProfile }) => {
+const MainScreanProfile = () => {
 
     const initialState = {
         openContestMonth: false,
@@ -34,7 +34,7 @@ const MainScreanProfile = ({ handleShowMain, handleShowProfile }) => {
 
     return (
         <div className={styles.mainScreanProfile}>
-            <ProfileCard handleShowMain={handleShowMain} handleShowProfile={handleShowProfile} />
+            <ProfileCard/>
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal />
                 <UserAchievements handleShowDescrActiveTask={handleShowDescrActiveTask} />

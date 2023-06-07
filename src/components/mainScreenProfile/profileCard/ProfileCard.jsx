@@ -9,15 +9,7 @@ import Test from '../../../img/user/test.png';
 import Trophy from '../../../img/user/trophy.png';
 import Profile from '../../../img/user/user.png';
 
-const ProfileCard = ({ handleShowMain, handleShowProfile }) => {
-
-    const handleClickProfile = () => {
-        handleShowProfile();
-    };
-
-    const handleClickMain = () => {
-        handleShowMain();
-    }
+const ProfileCard = () => {
 
     return (
         <div className={styles.profileWrap}>
@@ -34,13 +26,13 @@ const ProfileCard = ({ handleShowMain, handleShowProfile }) => {
                 </div>
             </div>
             <div className={styles.userBtnWrap}>
-                <button onClick={handleClickMain}>
+                <button>
                     <div className={styles.imgWrap}>
                         <img src={Menu} alt="Menu" />
                     </div>
                     <p>Main</p>
                 </button>
-                <button onClick={handleClickProfile}>
+                <button>
                     <div className={styles.imgWrap}>
                         <img src={Profile} alt="Profile" />
                     </div>
