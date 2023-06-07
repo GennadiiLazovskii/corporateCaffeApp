@@ -1,14 +1,17 @@
 import styles from './Header.module.scss';
 import arowLeft from '../../img/header/arowLeft.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
-    return(
+    return (
         <div className={styles.headerWrap}>
             <div className={styles.headerExit}>
-                <button>
-                    <img src={arowLeft} alt="arowLeft" />
-                </button>
+                <Link to='/'>
+                    <button>
+                        <img src={arowLeft} alt="arowLeft" />
+                    </button>
+                </Link>
                 <p>Exit</p>
             </div>
             <div className={styles.headerProfile}>
