@@ -1,0 +1,66 @@
+.itemLibraryDescr {
+        width: 900px;
+        height: 100%;
+        padding: 40px 33px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, #F9F9FF 0%, #FFFFFF 0%, #F2F1FF 100.05%);
+        border-radius: 12px;
+        .itemLibraryDescrBack {
+            width: 100%;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+    }
+
+    .itemLibraryDescrHeader {
+        margin-top: 35px;
+        p {
+            text-align: center;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 44px;
+            color: #1E1584;
+        }
+    }
+
+    .itemLibraryDescrTime {
+        margin-top: 35px;
+        p {
+            text-align: center;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1E1584;
+        }
+    }
+
+    .itemLibraryDescrText {
+        margin-top: 35px;
+        p {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            color: #524E7D;
+        }
+    }
+
+    .itemLibraryDescrImg {
+        margin-top: 35px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            margin-top: 30px;
+            width: 400px;
+            height: 300px;
+        }
+    }
+}

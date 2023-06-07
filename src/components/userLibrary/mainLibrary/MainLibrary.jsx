@@ -2,6 +2,7 @@ import BtnLibrary from '../btnLibrary/btnLibrary';
 import styles from './MainLibrary.module.scss';
 import Coffee from '../../../img/libraryImg/coffee.jpeg';
 import Clock from '../../../img/libraryImg/clock.png';
+import { Link } from 'react-router-dom';
 
 const MainLibrary = () => {
     return (
@@ -10,10 +11,12 @@ const MainLibrary = () => {
             <div className={styles.mainLibraryWrap}>
                 <div className={styles.mainLibraryItem}>
                     <div className={styles.mainLibraryDescr}>
-                        <div className={styles.mainLibraryText}>
-                            <p>Types of roasting
-                                coffee beans</p>
-                        </div>
+                        <Link to='/library/description' className={styles.linkSt}>
+                            <div className={styles.mainLibraryText}>
+                                <p>Types of roasting
+                                    coffee beans</p>
+                            </div>
+                        </Link>
                         <div className={styles.mainLibraryTime}>
                             <div className={styles.mainLibraryTimeWrap}>
                                 <img src={Clock} alt="Clock" />
@@ -27,10 +30,12 @@ const MainLibrary = () => {
                 </div>
                 <div className={styles.mainLibraryItem}>
                     <div className={styles.mainLibraryDescr}>
-                        <div className={styles.mainLibraryText}>
-                            <p>Types of roasting
-                                coffee beans</p>
-                        </div>
+                        <Link to='/library/description' className={styles.linkSt}>
+                            <div className={styles.mainLibraryText}>
+                                <p>Types of roasting
+                                    coffee beans</p>
+                            </div>
+                        </Link>
                         <div className={styles.mainLibraryTime}>
                             <div className={styles.mainLibraryTimeWrap}>
                                 <img src={Clock} alt="Clock" />
@@ -44,10 +49,12 @@ const MainLibrary = () => {
                 </div>
                 <div className={styles.mainLibraryItem}>
                     <div className={styles.mainLibraryDescr}>
-                        <div className={styles.mainLibraryText}>
-                            <p>Types of roasting
-                                coffee beans</p>
-                        </div>
+                        <Link to='/library/description' className={styles.linkSt}>
+                            <div className={styles.mainLibraryText}>
+                                <p>Types of roasting
+                                    coffee beans</p>
+                            </div>
+                        </Link>
                         <div className={styles.mainLibraryTime}>
                             <div className={styles.mainLibraryTimeWrap}>
                                 <img src={Clock} alt="Clock" />
@@ -61,10 +68,12 @@ const MainLibrary = () => {
                 </div>
                 <div className={styles.mainLibraryItem}>
                     <div className={styles.mainLibraryDescr}>
-                        <div className={styles.mainLibraryText}>
-                            <p>Types of roasting
-                                coffee beans</p>
-                        </div>
+                        <Link to='/library/description' className={styles.linkSt}>
+                            <div className={styles.mainLibraryText}>
+                                <p>Types of roasting
+                                    coffee beans</p>
+                            </div>
+                        </Link>
                         <div className={styles.mainLibraryTime}>
                             <div className={styles.mainLibraryTimeWrap}>
                                 <img src={Clock} alt="Clock" />
@@ -78,10 +87,12 @@ const MainLibrary = () => {
                 </div>
                 <div className={styles.mainLibraryItem}>
                     <div className={styles.mainLibraryDescr}>
-                        <div className={styles.mainLibraryText}>
-                            <p>Types of roasting
-                                coffee beans</p>
-                        </div>
+                        <Link to='/library/description' className={styles.linkSt}>
+                            <div className={styles.mainLibraryText}>
+                                <p>Types of roasting
+                                    coffee beans</p>
+                            </div>
+                        </Link>
                         <div className={styles.mainLibraryTime}>
                             <div className={styles.mainLibraryTimeWrap}>
                                 <img src={Clock} alt="Clock" />
@@ -95,10 +106,12 @@ const MainLibrary = () => {
                 </div>
                 <div className={styles.mainLibraryItem}>
                     <div className={styles.mainLibraryDescr}>
-                        <div className={styles.mainLibraryText}>
-                            <p>Types of roasting
-                                coffee beans</p>
-                        </div>
+                        <Link to='/library/description' className={styles.linkSt}>
+                            <div className={styles.mainLibraryText}>
+                                <p>Types of roasting
+                                    coffee beans</p>
+                            </div>
+                        </Link>
                         <div className={styles.mainLibraryTime}>
                             <div className={styles.mainLibraryTimeWrap}>
                                 <img src={Clock} alt="Clock" />
