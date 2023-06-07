@@ -1,13 +1,14 @@
-import styles from './ProfileCard.module.scss';
-import userImg from '../../../img/user/avatar.png';
-import userCrown from '../../../img/user/crown.png';
-import Menu from '../../../img/user/main-menu.png';
-import Book from '../../../img/user/open-book.png';
-import Rating from '../../../img/user/rating.png';
-import Shop from '../../../img/user/shopping-cart.png';
-import Test from '../../../img/user/test.png';
-import Trophy from '../../../img/user/trophy.png';
-import Profile from '../../../img/user/user.png';
+import styles from "./ProfileCard.module.scss";
+import userImg from "../../../img/user/avatar.png";
+import userCrown from "../../../img/user/crown.png";
+import Menu from "../../../img/user/main-menu.png";
+import Book from "../../../img/user/open-book.png";
+import Rating from "../../../img/user/rating.png";
+import Shop from "../../../img/user/shopping-cart.png";
+import Test from "../../../img/user/test.png";
+import Trophy from "../../../img/user/trophy.png";
+import Profile from "../../../img/user/user.png";
+import { Link } from "react-router-dom";
 
 const ProfileCard = () => {
 
@@ -26,18 +27,22 @@ const ProfileCard = () => {
                 </div>
             </div>
             <div className={styles.userBtnWrap}>
-                <button>
-                    <div className={styles.imgWrap}>
-                        <img src={Menu} alt="Menu" />
-                    </div>
-                    <p>Main</p>
-                </button>
-                <button>
-                    <div className={styles.imgWrap}>
-                        <img src={Profile} alt="Profile" />
-                    </div>
-                    <p>Profile</p>
-                </button>
+                <Link to="/" className={styles.linkBtn}>
+                    <button>
+                        <div className={styles.imgWrap}>
+                            <img src={Menu} alt="Menu" />
+                        </div>
+                        <p>Main</p>
+                    </button>
+                </Link>
+                <Link to="/profile" className={styles.linkBtn}>
+                    <button>
+                        <div className={styles.imgWrap}>
+                            <img src={Profile} alt="Profile" />
+                        </div>
+                        <p>Profile</p>
+                    </button>
+                </Link>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Trophy} alt="Achievement" />
@@ -56,12 +61,14 @@ const ProfileCard = () => {
                     </div>
                     <p>Testing</p>
                 </button>
+                <Link to="/library" className={styles.linkBtn}>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Book} alt="Library" />
                     </div>
                     <p>Library</p>
                 </button>
+                </Link>
                 <button>
                     <div className={styles.imgWrap}>
                         <img src={Shop} alt="Shop" />
@@ -70,7 +77,7 @@ const ProfileCard = () => {
                 </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default ProfileCard;
