@@ -34,7 +34,7 @@ const MainScreanProfile = () => {
 
     return (
         <div className={styles.mainScreanProfile}>
-            <ProfileCard/>
+            {/* <ProfileCard/> */}
             <div className={styles.mainScreanProfileCenter}>
                 <UserGoal />
                 <UserAchievements handleShowDescrActiveTask={handleShowDescrActiveTask} />
