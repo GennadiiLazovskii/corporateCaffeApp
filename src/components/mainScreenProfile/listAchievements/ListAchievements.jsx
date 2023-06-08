@@ -13,7 +13,7 @@ const ListAchievements = ({handleShowDescrActiveTask}) => {
                 <p> 1 </p>
             </div>
             <div className={styles.userAchievementsTask}>
-                <p onClick={handleShowDescrActiveTask}>Продать 100 кофе + десерт</p>
+                <p onClick={handleShowDescrActiveTask}>Sell 100 coffee + dessert</p>
             </div>
             <div className={styles.userAchievementsBonus}>
                 <div className={styles.userAchievementsBonusCrown}>
