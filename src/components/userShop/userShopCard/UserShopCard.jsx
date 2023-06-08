@@ -47,7 +47,7 @@ const UserShopCard = () => {
                 <div className={styles.contestMonthContainer}>
                     <div className={styles.blurBackground} />
                     <div className={styles.contestMonth}>
-                        <UserShopItemDescr />
+                        <UserShopItemDescr hideShopItemDescr={handleHideUserShopItemDescr} />
                     </div>
                 </div>
             )}
