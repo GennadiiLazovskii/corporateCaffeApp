@@ -18,6 +18,16 @@ export const modalReducer = (state, action) => {
                 openContestMonth: false,
                 openDescrActiveTask: false,
             };
+        case 'SHOW_USER_SHOP_ITEM_DESCR':
+            return {
+                ...state,
+                openShopItemDescr: true,
+            };
+        case 'HIDE_USER_SHOP_ITEM_DESCR':
+            return {
+                ...state,
+                openShopItemDescr: false,
+            };
         default:
             return state;
     }
