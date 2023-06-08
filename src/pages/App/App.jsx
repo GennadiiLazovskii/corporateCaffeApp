@@ -6,6 +6,7 @@ import UserProfileScreean from '../../components/userProfileScreean/UserProfileS
 import MainLibrary from '../../components/userLibrary/mainLibrary/MainLibrary';
 import ProfileCard from '../../components/mainScreenProfile/profileCard/ProfileCard.jsx';
 import ItemLibraryDescr from '../../components/userLibrary/itemLibraryDescr/ItemLibraryDescr';
+import UserShopScreean from '../../components/userShop/userShopScreean/UserShopScreean.jsx';
 
 const App = () => {
     return (
@@ -18,9 +19,9 @@ const App = () => {
                     <Route path="/profile" element={<UserProfileScreean />} />
                     <Route path="/library" element={<MainLibrary />} />
                     <Route path="/library/description" element={<ItemLibraryDescr/>} />
+                    <Route path="/shop" element={<UserShopScreean/>}/>
                 </Routes>
             </div>
-
         </Router>
     );
 };

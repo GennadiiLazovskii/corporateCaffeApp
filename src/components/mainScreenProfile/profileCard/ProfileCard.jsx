@@ -62,19 +62,21 @@ const ProfileCard = () => {
                     <p>Testing</p>
                 </button>
                 <Link to="/library" className={styles.linkBtn}>
-                <button>
-                    <div className={styles.imgWrap}>
-                        <img src={Book} alt="Library" />
-                    </div>
-                    <p>Library</p>
-                </button>
+                    <button>
+                        <div className={styles.imgWrap}>
+                            <img src={Book} alt="Library" />
+                        </div>
+                        <p>Library</p>
+                    </button>
+                </Link >
+                <Link to="/shop" className={styles.linkBtn} >
+                    <button>
+                        <div className={styles.imgWrap}>
+                            <img src={Shop} alt="Shop" />
+                        </div>
+                        <p>Shop</p>
+                    </button>
                 </Link>
-                <button>
-                    <div className={styles.imgWrap}>
-                        <img src={Shop} alt="Shop" />
-                    </div>
-                    <p>Shop</p>
-                </button>
             </div>
         </div>
     );

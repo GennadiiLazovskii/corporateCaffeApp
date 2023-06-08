@@ -1,0 +1,73 @@
+.userShopCard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 406px;
+    .userShopCardWrap {
+        margin-top: 20px;
+        width: 285px;
+        background: linear-gradient(180deg, #F9F9FF 0%, #FFFFFF 0%, #F2F1FF 100.05%);
+        box-shadow: 0px 4px 20px rgba(65, 55, 160, 0.15);
+        border-radius: 12px;
+    }
+    .userShopCardHeader {
+        padding-top: 32px;
+        p {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            color: #1E1584;
+        }
+    }
+    .userShopCardImg {
+        padding-top: 12px;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .userShopCardImgEllipse {
+            width: 170px;
+            height: 25px;
+        }
+    }
+    .userShopCardPrice {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        p {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            color: #1E1584;
+        }
+    }
+    .userShopCardBtn {
+        margin-top: 26px;
+        width: 100%;
+        button {
+            width: 100%;
+            height: 82px;
+            outline: none;
+            cursor: pointer;
+            background: linear-gradient(180deg, #ACA4FF 0%, #7B6FFF 0.01%, #5242FF 99.98%);
+            border-radius: 0px 0px 12px 12px;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+    }
+}

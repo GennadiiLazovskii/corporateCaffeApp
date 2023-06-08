@@ -1,0 +1,20 @@
+.userShopScreean {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 650px;
+    background: linear-gradient(180deg, #F9F9FF 0%, #FFFFFF 0%, #F2F1FF 100.05%);
+    border-radius: 12px;
+    padding: 40px;
+}
+.userShopScreeanHead {
+    width: 100%;
+    display: flex;
+    .userShopScreeanDeliv {
+        img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
+    }
+}
