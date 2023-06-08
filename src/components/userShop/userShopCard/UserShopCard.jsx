@@ -43,7 +43,14 @@ const UserShopCard = () => {
                     </button>
                 </div>
             </div>
-            {state.openShopItemDescr && <UserShopItemDescr/>}
+            {state.openShopItemDescr && (
+                <div className={styles.contestMonthContainer}>
+                    <div className={styles.blurBackground} />
+                    <div className={styles.contestMonth}>
+                        <UserShopItemDescr />
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
