@@ -29,7 +29,7 @@ const App = () => {
             <div className={styles.profileCard}>
                 <ProfileCard users={user} />
                 <Routes>
-                    <Route path="/" element={<MainScreanProfile />} />
+                    <Route path="/" element={<MainScreanProfile users={user}/>} />
                     <Route path="/profile" element={<UserProfileScreean />} />
                     <Route path="/library" element={<MainLibrary />} />
                     <Route path="/library/description" element={<ItemLibraryDescr/>} />
