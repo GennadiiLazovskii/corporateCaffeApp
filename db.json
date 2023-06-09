@@ -1,43 +1,43 @@
 {
   "users": [
-      {
-          "id": 1,
-          "name": "John",
-          "surName": "Doe",
-          "jobTitle": "Software Engineer",
-          "avatar": "https://example.com/avatar.jpg",
-          "level": 5,
-          "money": 1000,
-          "karma": {
-              "value": 50,
-              "totalKarma": 100
-          },
-          "placeOfWork": "ABC Company",
-          "hobbies": [
-              "Reading",
-              "Gaming",
-              "Cooking"
-          ],
-          "dream": "To travel the world",
-          "languages": [
-              "English",
-              "Spanish",
-              "French"
-          ],
-          "wantIn5Years": "To start my own business",
-          "yourStatistics": {
-              "dayWorkedOut": 20,
-              "checksPunched": 300,
-              "coffeeIsBrewed": 500,
-              "totalAmountOfChecks": 750000
-          },
-          "moveNextLevel": {
-              "successfullyPassTest": true,
-              "brew300CupsOfCoffee": false,
-              "knockOut300Checks": true,
-              "brewCappuccinoIn120Seconds": false,
-              "amountOfChecksExceed700K": true
-          }
+    {
+      "id": 1,
+      "name": "John",
+      "surName": "Doe",
+      "jobTitle": "Software Engineer",
+      "avatar": "https://example.com/avatar.jpg",
+      "level": 5,
+      "money": 1000,
+      "karma": {
+        "value": 50,
+        "totalKarma": 100
+      },
+      "placeOfWork": "ABC Company",
+      "hobbies": [
+        "Reading",
+        "Gaming",
+        "Cooking"
+      ],
+      "dream": "To travel the world",
+      "languages": [
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "wantIn5Years": "To start my own business",
+      "yourStatistics": {
+        "dayWorkedOut": 20,
+        "checksPunched": 300,
+        "coffeeIsBrewed": 500,
+        "totalAmountOfChecks": 750000
+      },
+      "moveNextLevel": {
+        "successfullyPassTest": true,
+        "brew300CupsOfCoffee": false,
+        "knockOut300Checks": true,
+        "brewCappuccinoIn120Seconds": false,
+        "amountOfChecksExceed700K": true
       }
+    }
   ]
 }

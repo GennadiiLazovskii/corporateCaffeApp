@@ -7,8 +7,22 @@ import MainLibrary from '../../components/userLibrary/mainLibrary/MainLibrary';
 import ProfileCard from '../../components/mainScreenProfile/profileCard/ProfileCard.jsx';
 import ItemLibraryDescr from '../../components/userLibrary/itemLibraryDescr/ItemLibraryDescr';
 import UserShopScreean from '../../components/userShop/userShopScreean/UserShopScreean.jsx';
+import UserService from '../../service/user.service';
+import { useEffect, useState } from 'react';
 
 const App = () => {
+
+    const [user, setUser] = useState();
+
+    useEffect(() => {
+        
+        const fetcDate = async () => {
+            const response = await UserService.getAll()
+            setUser(response)
+        }
+        fetcDate();
+    }, [])
+
     return (
         <Router>
             <Header />
