@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
 
-    const [user, setUser] = useState();
+    const [user, setUser] = useState([]);
 
     useEffect(() => {
         
@@ -27,7 +27,7 @@ const App = () => {
         <Router>
             <Header />
             <div className={styles.profileCard}>
-                <ProfileCard />
+                <ProfileCard users={user} />
                 <Routes>
                     <Route path="/" element={<MainScreanProfile />} />
                     <Route path="/profile" element={<UserProfileScreean />} />
