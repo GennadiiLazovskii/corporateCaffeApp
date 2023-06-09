@@ -31,11 +31,11 @@
         "totalAmountOfChecks": 4500
       },
       "moveNextLevelProcent": {
-        "successfullyPassTest": 45,
-        "brew300CupsOfCoffee": 23,
-        "knockOut300Checks": 15,
-        "brewCappuccinoIn120Seconds": 50,
-        "amountOfChecksExceed700K": 10
+        "successfullyPassTest": 10,
+        "brew300CupsOfCoffee": 30,
+        "knockOut300Checks": 60,
+        "brewCappuccinoIn120Seconds": 60,
+        "amountOfChecksExceed200K": 4500
       }
     }
   ]
