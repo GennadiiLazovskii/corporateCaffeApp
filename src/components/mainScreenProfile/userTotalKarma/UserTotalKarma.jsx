@@ -10,7 +10,7 @@ const UserTotalKarma = ({ handleShowContestMonth, users }) => {
                         <p>Total Karma</p>
                     </div>
                     <div className={styles.userTotalKarmaAdress}>
-                        <p>Coffe, Kyiv city, Khoryva street</p>
+                        <p>{`Coffe, ${user.placeOfWork}`}</p>
                     </div>
                     <div className={styles.userTotalKarmaItem}>
                         <img src={Karma} alt="Karma" />
