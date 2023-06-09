@@ -3,14 +3,14 @@ import UserLevel from './userLevel/UserLevel';
 import UserProfile from './userProfile/userProfile';
 import UserStatistics from './userStatistics/UserStatistics';
 
-const UserProfileScreean = () => {
+const UserProfileScreean = ({users}) => {
 
     return (
         <div className={styles.UserProfileScreean}>
             <div className={styles.UserProfileScreeanRig}>
-                <UserProfile/>
-                <UserStatistics/>
-                <UserLevel/>
+                <UserProfile users={users}/>
+                <UserStatistics users={users}/>
+                <UserLevel users={users}/>
             </div>
         </div>
     )

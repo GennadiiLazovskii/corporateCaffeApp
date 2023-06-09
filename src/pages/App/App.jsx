@@ -30,7 +30,7 @@ const App = () => {
                 <ProfileCard users={user} />
                 <Routes>
                     <Route path="/" element={<MainScreanProfile users={user}/>} />
-                    <Route path="/profile" element={<UserProfileScreean />} />
+                    <Route path="/profile" element={<UserProfileScreean users={user} />} />
                     <Route path="/library" element={<MainLibrary />} />
                     <Route path="/library/description" element={<ItemLibraryDescr/>} />
                     <Route path="/shop" element={<UserShopScreean/>}/>
