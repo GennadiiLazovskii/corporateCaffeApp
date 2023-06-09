@@ -39,7 +39,7 @@ const MainScreanProfile = ({users}) => {
             </div>
             <div className={styles.mainScreanProfileRight}>
                 <UserTotalKarma handleShowContestMonth={handleShowContestMonth} users={users} />
-                <UserWishes />
+                <UserWishes users={users} />
             </div>
             {state.openContestMonth && (
                 <div className={styles.contestMonthContainer}>
