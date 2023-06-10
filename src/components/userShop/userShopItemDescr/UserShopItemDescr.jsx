@@ -18,7 +18,7 @@ const UserShopItemDescr = ({product, hideShopItemDescr}) => {
                         <img className={styles.Ellipse} src={Ellipse} alt="Ellipse" />
                         <div className={styles.userShopItemDescrItemLeftPrice}>
                             <img src={Crown} alt="Crown" />
-                            <p>341</p>
+                            <p>{product.price}</p>
                         </div>
                     </div>
                     <div className={styles.userShopItemDescrItemCenter}></div>
