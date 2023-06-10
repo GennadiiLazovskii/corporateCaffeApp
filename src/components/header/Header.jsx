@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 import arowLeft from '../../img/header/arowLeft.png';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({profileName}) => {
 
     return (
         <div className={styles.headerWrap}>
@@ -15,7 +15,7 @@ const Header = () => {
                 <p>Exit</p>
             </div>
             <div className={styles.headerProfile}>
-                <p>Profile</p>
+                <p>{profileName}</p>
             </div>
             <div className={styles.headerMesage}>
                 <button>Chat</button>

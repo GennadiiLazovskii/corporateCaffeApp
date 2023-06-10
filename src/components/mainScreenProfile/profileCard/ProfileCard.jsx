@@ -9,7 +9,11 @@ import Trophy from "../../../img/user/trophy.png";
 import Profile from "../../../img/user/user.png";
 import { Link } from "react-router-dom";
 
-const ProfileCard = ({ users }) => {
+const ProfileCard = ({ users, updateProfileName }) => {
+
+    const handleButtonClick = (name) => {
+        updateProfileName(name);
+    };
 
     return (
         <>
@@ -29,7 +33,7 @@ const ProfileCard = ({ users }) => {
                     </div>
                     <div className={styles.userBtnWrap}>
                         <Link to="/" className={styles.linkBtn}>
-                            <button>
+                            <button onClick={() => handleButtonClick('Main')}>
                                 <div className={styles.imgWrap}>
                                     <img src={Menu} alt="Menu" />
                                 </div>
@@ -37,33 +41,33 @@ const ProfileCard = ({ users }) => {
                             </button>
                         </Link>
                         <Link to="/profile" className={styles.linkBtn}>
-                            <button>
+                            <button onClick={() => handleButtonClick('Profile')}>
                                 <div className={styles.imgWrap}>
                                     <img src={Profile} alt="Profile" />
                                 </div>
                                 <p>Profile</p>
                             </button>
                         </Link>
-                        <button>
+                        <button onClick={() => handleButtonClick('Achievement')}>
                             <div className={styles.imgWrap}>
                                 <img src={Trophy} alt="Achievement" />
                             </div>
                             <p>Achievement</p>
                         </button>
-                        <button>
+                        <button onClick={() => handleButtonClick('Rating')}>
                             <div className={styles.imgWrap}>
                                 <img src={Rating} alt="Rating" />
                             </div>
                             <p>Rating</p>
                         </button>
-                        <button>
+                        <button onClick={() => handleButtonClick('Testing')}>
                             <div className={styles.imgWrap}>
                                 <img src={Test} alt="Test" />
                             </div>
                             <p>Testing</p>
                         </button>
                         <Link to="/library" className={styles.linkBtn}>
-                            <button>
+                            <button onClick={() => handleButtonClick('Library')}>
                                 <div className={styles.imgWrap}>
                                     <img src={Book} alt="Library" />
                                 </div>
@@ -71,7 +75,7 @@ const ProfileCard = ({ users }) => {
                             </button>
                         </Link >
                         <Link to="/shop" className={styles.linkBtn} >
-                            <button>
+                            <button onClick={() => handleButtonClick('Shop')}>
                                 <div className={styles.imgWrap}>
                                     <img src={Shop} alt="Shop" />
                                 </div>
