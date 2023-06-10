@@ -12,10 +12,10 @@ const UserLevel = ({ users }) => {
             {users.map(user => (
                 <div className={styles.userLevel} key={user.id}>
                     <div className={styles.userLevelImg}>
-                        <img src={LvlOne} alt="level One" />
-                        <img src={LvlTwo} alt="level Two" />
-                        <img src={LvlThree} alt="level Three" />
-                        <img src={LvlFour} alt="level Four" />
+                        <img className={user.level === 1 ? styles.userLevelImgActive : ''} src={LvlOne} alt="level One" />
+                        <img className={user.level === 2 ? styles.userLevelImgActive : ''} src={LvlTwo} alt="level Two" />
+                        <img className={user.level === 3 ? styles.userLevelImgActive : ''} src={LvlThree} alt="level Three" />
+                        <img className={user.level === 4 ? styles.userLevelImgActive : ''} src={LvlFour} alt="level Four" />
                     </div>
                     <div className={styles.userLevelNextLvl}>
                         <h2>To move to the second level you need:</h2>
