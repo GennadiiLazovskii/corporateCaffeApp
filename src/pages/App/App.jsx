@@ -9,16 +9,27 @@ import ItemLibraryDescr from '../../components/userLibrary/itemLibraryDescr/Item
 import UserShopScreean from '../../components/userShop/userShopScreean/UserShopScreean.jsx';
 import UserService from '../../service/user.service';
 import { useEffect, useState } from 'react';
+import ShopService from '../../service/shop.service';
 
 const App = () => {
 
     const [user, setUser] = useState([]);
+    const [shop, setShop] = useState([]);
 
     useEffect(() => {
         
         const fetcDate = async () => {
             const response = await UserService.getAll()
             setUser(response)
+        }
+        fetcDate();
+    }, [])
+
+    useEffect(() => {
+        
+        const fetcDate = async () => {
+            const response = await ShopService.getAll()
+            setShop(response)
         }
         fetcDate();
     }, [])

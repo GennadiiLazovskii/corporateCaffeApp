@@ -38,5 +38,12 @@
         "amountOfChecksExceed200K": 4500
       }
     }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "nameProduct": "Branded T-shirt",
+      "price": 350
+    }
   ]
 }
