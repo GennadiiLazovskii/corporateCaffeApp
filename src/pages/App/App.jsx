@@ -44,7 +44,7 @@ const App = () => {
                     <Route path="/profile" element={<UserProfileScreean users={user} />} />
                     <Route path="/library" element={<MainLibrary />} />
                     <Route path="/library/description" element={<ItemLibraryDescr/>} />
-                    <Route path="/shop" element={<UserShopScreean/>}/>
+                    <Route path="/shop" element={<UserShopScreean shop={shop}/>}/>
                 </Routes>
             </div>
         </Router>

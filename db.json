@@ -43,6 +43,37 @@
     {
       "id": 1,
       "nameProduct": "Branded T-shirt",
+      "productImage": "https://mkarapuz.com.ua/wp-content/uploads/2019/05/muzhskaya-futbolka-chernaya-1006.png",
+      "price": 350
+    },
+    {
+      "id": 2,
+      "nameProduct": "Branded T-shirt",
+      "productImage": "https://mkarapuz.com.ua/wp-content/uploads/2019/05/muzhskaya-futbolka-chernaya-1006.png",
+      "price": 350
+    },
+    {
+      "id": 3,
+      "nameProduct": "Branded T-shirt",
+      "productImage": "https://mkarapuz.com.ua/wp-content/uploads/2019/05/muzhskaya-futbolka-chernaya-1006.png",
+      "price": 350
+    },
+    {
+      "id": 4,
+      "nameProduct": "Branded T-shirt",
+      "productImage": "https://mkarapuz.com.ua/wp-content/uploads/2019/05/muzhskaya-futbolka-chernaya-1006.png",
+      "price": 350
+    },
+    {
+      "id": 5,
+      "nameProduct": "Branded T-shirt",
+      "productImage": "https://mkarapuz.com.ua/wp-content/uploads/2019/05/muzhskaya-futbolka-chernaya-1006.png",
+      "price": 350
+    },
+    {
+      "id": 6,
+      "nameProduct": "Branded T-shirt",
+      "productImage": "https://mkarapuz.com.ua/wp-content/uploads/2019/05/muzhskaya-futbolka-chernaya-1006.png",
       "price": 350
     }
   ]

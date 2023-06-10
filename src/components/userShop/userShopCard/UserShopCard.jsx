@@ -7,7 +7,7 @@ import tShirt from "../../../img/user/t-shirt.png";
 import Ellipse from "../../../img/user/Ellipse.png"
 import UserShopItemDescr from '../userShopItemDescr/UserShopItemDescr';
 
-const UserShopCard = () => {
+const UserShopCard = ({shop}) => {
 
     const initialState = {
         openShopItemDescr: false,
@@ -24,18 +24,20 @@ const UserShopCard = () => {
     };
 
     return (
-        <div className={styles.userShopCard}>
+        <>
+        {shop.map((product) => (
+            <div className={styles.userShopCard} key={product.id}>
             <div className={styles.userShopCardWrap}>
                 <div className={styles.userShopCardHeader}>
-                    <p>Branded T-shirt "Coffee" </p>
+                    <p>{product.nameProduct}</p>
                 </div>
                 <div className={styles.userShopCardImg}>
-                    <img onClick={handleShowUserShopItemDescr} src={tShirt} alt="t-Shirt" />
+                    <img onClick={handleShowUserShopItemDescr} src={product.productImage} alt="t-Shirt" />
                     <img className={styles.userShopCardImgEllipse} src={Ellipse} alt="Ellipse" />
                 </div>
                 <div className={styles.userShopCardPrice}>
                     <img src={Crown} alt="Crown" />
-                    <p>341</p>
+                    <p>{product.price}</p>
                 </div>
                 <div className={styles.userShopCardBtn}>
                     <button>
@@ -52,6 +54,8 @@ const UserShopCard = () => {
                 </div>
             )}
         </div>
+        ))}
+        </>
     )
 }
 
