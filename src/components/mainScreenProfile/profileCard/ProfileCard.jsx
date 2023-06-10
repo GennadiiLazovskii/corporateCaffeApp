@@ -7,6 +7,7 @@ import Shop from "../../../img/user/shopping-cart.png";
 import Test from "../../../img/user/test.png";
 import Trophy from "../../../img/user/trophy.png";
 import Profile from "../../../img/user/user.png";
+import Avatar from "../../../img/user/Avatar.png";
 import { Link } from "react-router-dom";
 
 const ProfileCard = ({ users, updateProfileName }) => {
@@ -20,7 +21,7 @@ const ProfileCard = ({ users, updateProfileName }) => {
             {users.map(user => (
                 <div className={styles.profileWrap} key={user.id}>
                     <div className={styles.userInfo}>
-                        <img src={user.avatar} alt="User Avatar" />
+                        <img src={user.avatar.length === 0 ? Avatar : user.avatar} alt="User Avatar" />
                         <p className={styles.userName}>{`${user.FirstName} ${user.LastName}`}</p>
                         <p className={styles.userPosition}>{user.jobTitle}</p>
                     </div>
