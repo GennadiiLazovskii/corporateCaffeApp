@@ -1,6 +1,7 @@
 import styles from "./UserProfile.module.scss";
 import Crown from "../../../img/user/crown.png";
 import Karma from "../../../img/user/karma.png";
+import Avatar from "../../../img/user/Avatar.png";
 
 const UserProfile = ({ users }) => {
     return (
@@ -11,7 +12,7 @@ const UserProfile = ({ users }) => {
                         <div className={styles.UserProfileUser}>
                             <div className={styles.UserProfileDescr}>
                                 <div className={styles.UserProfileDescrImg}>
-                                    <img src={user.avatar} alt="Avatar" />
+                                    <img src={user.avatar.length === 0 ? Avatar : user.avatar} alt="Avatar" />
                                 </div>
                                 <div className={styles.UserProfileDescrUser}>
                                     <div className={styles.UserProfileDescrUserName}>
