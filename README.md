@@ -25,4 +25,4 @@ To install and run the Corporate-app locally, follow these steps:
 1. Clone the repository: `git clone [repository URL](https://github.com/GennadiiLazovskii/corporateCaffeApp.git)]`
 2. Navigate to the project directory: `cd corporate-app`
 3. Install dependencies: `npm install`
-4. Start the development server: `npm run dev`
+4. Start the development server: `npm run start`
