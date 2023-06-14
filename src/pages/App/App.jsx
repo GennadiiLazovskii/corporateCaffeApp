@@ -15,7 +15,7 @@ const App = () => {
 
     const [user, setUser] = useState([]);
     const [shop, setShop] = useState([]);
-    const [profileName, setProfileName] = useState('Main')
+    // const [profileName, setProfileName] = useState('Main')
 
     useEffect(() => {
         
@@ -35,15 +35,15 @@ const App = () => {
         fetcDate();
     }, [])
 
-    const updateProfileName = (name) => {
-        setProfileName(name)
-    }
+    // const updateProfileName = (name) => {
+    //     setProfileName(name)
+    // }
 
     return (
         <Router>
-            <Header profileName={profileName}/>
+            <Header/>
             <div className={styles.profileCard}>
-                <ProfileCard users={user} updateProfileName={updateProfileName} />
+                <ProfileCard users={user} />
                 <Routes>
                     <Route path="/" element={<MainScreanProfile users={user}/>} />
                     <Route path="/profile" element={<UserProfileScreean users={user} />} />

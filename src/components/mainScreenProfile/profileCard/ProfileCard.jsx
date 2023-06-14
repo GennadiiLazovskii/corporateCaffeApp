@@ -9,12 +9,12 @@ import Trophy from "../../../img/user/trophy.png";
 import Profile from "../../../img/user/user.png";
 import Avatar from "../../../img/user/Avatar.png";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setProfileName } from "../../../features/header/headerSlice";
 
-const ProfileCard = ({ users, updateProfileName }) => {
+const ProfileCard = ({ users }) => {
 
-    const handleButtonClick = (name) => {
-        updateProfileName(name);
-    };
+    const dispatch = useDispatch();
 
     return (
         <>
@@ -34,7 +34,7 @@ const ProfileCard = ({ users, updateProfileName }) => {
                     </div>
                     <div className={styles.userBtnWrap}>
                         <Link to="/" className={styles.linkBtn}>
-                            <button onClick={() => handleButtonClick('Main')}>
+                            <button onClick={() => dispatch(setProfileName('Main'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Menu} alt="Menu" />
                                 </div>
@@ -42,33 +42,33 @@ const ProfileCard = ({ users, updateProfileName }) => {
                             </button>
                         </Link>
                         <Link to="/profile" className={styles.linkBtn}>
-                            <button onClick={() => handleButtonClick('Profile')}>
+                            <button onClick={() => dispatch(setProfileName('Profile'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Profile} alt="Profile" />
                                 </div>
                                 <p>Profile</p>
                             </button>
                         </Link>
-                        <button onClick={() => handleButtonClick('Achievement')}>
+                        <button onClick={() => dispatch(setProfileName('Achievement'))}>
                             <div className={styles.imgWrap}>
                                 <img src={Trophy} alt="Achievement" />
                             </div>
                             <p>Achievement</p>
                         </button>
-                        <button onClick={() => handleButtonClick('Rating')}>
+                        <button onClick={() => dispatch(setProfileName('Rating'))}>
                             <div className={styles.imgWrap}>
                                 <img src={Rating} alt="Rating" />
                             </div>
                             <p>Rating</p>
                         </button>
-                        <button onClick={() => handleButtonClick('Testing')}>
+                        <button onClick={() => dispatch(setProfileName('Test'))}>
                             <div className={styles.imgWrap}>
                                 <img src={Test} alt="Test" />
                             </div>
                             <p>Testing</p>
                         </button>
                         <Link to="/library" className={styles.linkBtn}>
-                            <button onClick={() => handleButtonClick('Library')}>
+                            <button onClick={() => dispatch(setProfileName('Library'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Book} alt="Library" />
                                 </div>
@@ -76,7 +76,7 @@ const ProfileCard = ({ users, updateProfileName }) => {
                             </button>
                         </Link >
                         <Link to="/shop" className={styles.linkBtn} >
-                            <button onClick={() => handleButtonClick('Shop')}>
+                            <button onClick={() => dispatch(setProfileName('Shop'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Shop} alt="Shop" />
                                 </div>
