@@ -1,16 +1,19 @@
 import styles from './Header.module.scss';
 import arowLeft from '../../img/header/arowLeft.png';
 import { Link } from 'react-router-dom';
-import {  useSelector  } from 'react-redux'
+import {  useSelector, useDispatch  } from 'react-redux'
+import { setProfileName } from '../../features/header/headerSlice';
 
 const Header = () => {
-    const profileNameText = useSelector((state) => state.header.profileName)
+
+    const profileNameText = useSelector((state) => state.header.profileName);
+    const dispatch = useDispatch();
 
     return (
         <div className={styles.headerWrap}>
             <div className={styles.headerExit}>
                 <Link to='/'>
-                    <button>
+                    <button onClick={() => dispatch(setProfileName('Main'))}>
                         <img src={arowLeft} alt="arowLeft" />
                     </button>
                 </Link>
