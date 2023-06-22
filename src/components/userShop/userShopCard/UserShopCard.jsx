@@ -43,7 +43,8 @@ const UserShopCard = ({ shop }) => {
                         </div>
                         <div className={styles.userShopCardBtn}>
                             <button>
-                                <p>Buy</p>
+                                {/* <p>Buy</p> */}
+                                
                             </button>
                         </div>
                     </div>
