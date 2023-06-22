@@ -2,6 +2,9 @@ import UserShopBtn from '../userShopBtn/UserShopBtn';
 import UserShopCard from '../userShopCard/UserShopCard';
 import styles from './UserShopScreean.module.scss';
 import Delivery from '../../../img/shop/delivery.png';
+import UserBascet from '../userBascet/UserBascet';
+
+
 const UserShopScreean = ({shop}) => {
 
     return (
@@ -13,6 +16,7 @@ const UserShopScreean = ({shop}) => {
                 </div>
             </div>
             <UserShopCard shop={shop} />
+            {/* <UserBascet/> */}
         </div>
     )
 }
