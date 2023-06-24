@@ -3,11 +3,14 @@ import { showUserShopItemDescr, hideUserShopItemDescr } from '../../actions/moda
 import { useReducer, useState } from 'react';
 import styles from "./UserShopCard.module.scss";
 import Crown from "../../../img/user/crown.png";
-import tShirt from "../../../img/user/t-shirt.png";
 import Ellipse from "../../../img/user/Ellipse.png"
 import UserShopItemDescr from '../userShopItemDescr/UserShopItemDescr';
+import {  useDispatch  } from 'react-redux';
+import {  addOrder  } from '../../../features/bascet/bascetSlice.js';
 
 const UserShopCard = ({ shop }) => {
+
+    const dispatchOrder = useDispatch();
 
     const initialState = {
         openShopItemDescr: false,
@@ -24,6 +27,10 @@ const UserShopCard = ({ shop }) => {
     const handleHideUserShopItemDescr = () => {
         dispatch(hideUserShopItemDescr());
     };
+
+    const handleAddToCart = (productId) => {
+        dispatchOrder(addOrder(productId))
+    }
 
     return (
         <>
@@ -42,7 +49,7 @@ const UserShopCard = ({ shop }) => {
                             <p>{product.price}</p>
                         </div>
                         <div className={styles.userShopCardBtn}>
-                            <button>
+                            <button onClick={() => handleAddToCart(product.id)}>
                                 <p>Buy</p>
                             </button>
                         </div>

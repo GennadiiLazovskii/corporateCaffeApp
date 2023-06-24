@@ -24,7 +24,7 @@ const UserShopScreean = ({ shop }) => {
                 <div className={styles.userBascetContainer}>
                     <div className={styles.userBascetblurBackground} />
                     <div className={styles.userBascet}>
-                        <UserBascet/>
+                        <UserBascet shop={shop}/>
                     </div>
                 </div>
             )}

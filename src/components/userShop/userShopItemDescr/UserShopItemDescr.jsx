@@ -1,5 +1,4 @@
 import styles from "./UserShopItemDescr.module.scss";
-import tShirt from "../../../img/user/t-shirt.png";
 import Ellipse from "../../../img/user/Ellipse.png";
 import Crown from "../../../img/user/crown.png";
 import ShopBtnExit from "../shopBtnExit/ShopBtnExit.jsx";
