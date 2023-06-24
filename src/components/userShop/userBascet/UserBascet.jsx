@@ -13,7 +13,6 @@ const UserBascet = ({ shop }) => {
   const orderedProducts = shop.filter((product) => orderId.includes(product.id));
 
   const handleDeleteToCart = (productId) => {
-    console.log(productId)
     dispatch(deleteProduct(productId))
   }
 
