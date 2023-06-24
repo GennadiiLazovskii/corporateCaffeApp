@@ -5,12 +5,15 @@ import styles from "./UserShopCard.module.scss";
 import Crown from "../../../img/user/crown.png";
 import Ellipse from "../../../img/user/Ellipse.png"
 import UserShopItemDescr from '../userShopItemDescr/UserShopItemDescr';
-import {  useDispatch  } from 'react-redux';
-import {  addOrder  } from '../../../features/bascet/bascetSlice.js';
+import { useDispatch, useSelector } from 'react-redux';
+import { addOrder, show } from '../../../features/bascet/bascetSlice.js';
+import { setModalContext } from '../../../features/buttonExit/buttonExitSlice';
+import UserBascet from '../userBascet/UserBascet';
 
 const UserShopCard = ({ shop }) => {
 
     const dispatchOrder = useDispatch();
+    const cartStatus = useSelector((state) => state.modal.modalState);
 
     const initialState = {
         openShopItemDescr: false,
@@ -29,7 +32,9 @@ const UserShopCard = ({ shop }) => {
     };
 
     const handleAddToCart = (productId) => {
-        dispatchOrder(addOrder(productId))
+        dispatchOrder(addOrder(productId));
+        dispatchOrder(show(true));
+        dispatchOrder(setModalContext(true));
     }
 
     return (
@@ -54,6 +59,15 @@ const UserShopCard = ({ shop }) => {
                             </button>
                         </div>
                     </div>
+
+                    {cartStatus && (
+                        <div className={styles.userBascetContainer}>
+                            <div className={styles.userBascetblurBackground} />
+                            <div className={styles.userBascet}>
+                                <UserBascet shop={shop} />
+                            </div>
+                        </div>
+                    )}
                     {state.openShopItemDescr && prodId === product.id && (
                         <div className={styles.contestMonthContainer}>
                             <div className={styles.blurBackground} />

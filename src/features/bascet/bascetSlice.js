@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   order: [],
+  show: false,
 };
 
 export const bascetSlice = createSlice({
@@ -13,9 +14,12 @@ export const bascetSlice = createSlice({
     },
     deleteProduct: (state, action) => {
       state.order = state.order.filter((product) => product !== action.payload);
-    }
+    },
+    show: (state, action) => {
+      state.show = action.payload;
+    },
   }
 });
 
-export const { addOrder, deleteProduct } = bascetSlice.actions;
+export const { addOrder, deleteProduct, show } = bascetSlice.actions;
 export default bascetSlice.reducer;
