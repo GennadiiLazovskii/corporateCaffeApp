@@ -41,25 +41,25 @@ const UserBascet = ({ shop }) => {
                 <h2>My orders</h2>
               </div>
               {orderedProducts.map((product) => (
-                <div className={styles.orderBascetWrap} key={product.id}>
-                  <div className={styles.orderBascetWrapImg}>
-                    <img src={product.productImage} alt="shirt" />
+                  <div className={styles.orderBascetWrap} key={product.id}>
+                    <div className={styles.orderBascetWrapImg}>
+                      <img src={product.productImage} alt="shirt" />
+                    </div>
+                    <div className={styles.orderBascetWrapDescr}>
+                      <p>{product.nameProduct}</p>
+                    </div>
+                    <div className={styles.orderBascetWrapStatus}>
+                      <p>In delivery</p>
+                    </div>
+                    <div className={styles.orderBascetWrapDate}>
+                      <p>Will be delivered <br />03/02/2023</p>
+                    </div>
+                    <div className={styles.userBascetDelet}>
+                      <button onClick={() => handleDeleteToCart(product.id)}>
+                        <img src={Cross} alt="Exit" />
+                      </button>
+                    </div>
                   </div>
-                  <div className={styles.orderBascetWrapDescr}>
-                    <p>{product.nameProduct}</p>
-                  </div>
-                  <div className={styles.orderBascetWrapStatus}>
-                    <p>In delivery</p>
-                  </div>
-                  <div className={styles.orderBascetWrapDate}>
-                    <p>Will be delivered <br />03/02/2023</p>
-                  </div>
-                  <div className={styles.userBascetDelet}>
-                    <button onClick={() => handleDeleteToCart(product.id)}>
-                      <img src={Cross} alt="Exit" />
-                    </button>
-                  </div>
-                </div>
               ))}
             </div>
           </>
