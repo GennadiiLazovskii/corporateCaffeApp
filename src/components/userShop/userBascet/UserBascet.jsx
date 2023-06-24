@@ -2,6 +2,7 @@ import styles from "./UserBascet.module.scss";
 import Cross from "../../../img/header/cross.png";
 import Smile from "../../../img/shop/sad.png";
 import { setModalContext } from "../../../features/buttonExit/buttonExitSlice";
+import { deleteProduct } from "../../../features/bascet/bascetSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const UserBascet = ({ shop }) => {
@@ -10,6 +11,11 @@ const UserBascet = ({ shop }) => {
   const dispatch = useDispatch();
 
   const orderedProducts = shop.filter((product) => orderId.includes(product.id));
+
+  const handleDeleteToCart = (productId) => {
+    console.log(productId)
+    dispatch(deleteProduct(productId))
+  }
 
   return (
     <>
@@ -48,6 +54,11 @@ const UserBascet = ({ shop }) => {
                   </div>
                   <div className={styles.orderBascetWrapDate}>
                     <p>Will be delivered <br />03/02/2023</p>
+                  </div>
+                  <div className={styles.userBascetDelet}>
+                    <button onClick={() => handleDeleteToCart(product.id)}>
+                      <img src={Cross} alt="Exit" />
+                    </button>
                   </div>
                 </div>
               ))}

@@ -10,9 +10,12 @@ export const bascetSlice = createSlice({
   reducers: {
     addOrder: (state, action) => {
       state.order.push(action.payload);
+    },
+    deleteProduct: (state, action) => {
+      state.order = state.order.filter((product) => product !== action.payload);
     }
   }
 });
 
-export const { addOrder } = bascetSlice.actions;
+export const { addOrder, deleteProduct } = bascetSlice.actions;
 export default bascetSlice.reducer;

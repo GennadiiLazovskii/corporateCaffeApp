@@ -68,7 +68,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 30px;
+      gap: 10px;
       margin-top: 40px;
       width: 600px;
       height: 143px;
@@ -107,6 +107,27 @@
         font-size: 16px;
         font-family: Noto Sans;
         line-height: 180%;
+      }
+    }
+    .userBascetDelet {
+      display: flex;
+      margin: 10px 20px 0px;
+  
+      button {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1px solid #1E1584;
+  
+        img {
+          width: 40px;
+          height: 40px;
+        }
       }
     }
   }
