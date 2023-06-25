@@ -13,7 +13,7 @@ const UserShopItemDescr = ({product, hideShopItemDescr}) => {
                 </div>
                 <div className={styles.userShopItemDescrItem}>
                     <div className={styles.userShopItemDescrItemLeft}>
-                        <img src={product.productImage} alt={product.nameProduct} />
+                        <img className={styles.animatedImage} src={product.productImage} alt={product.nameProduct} />
                         <img className={styles.Ellipse} src={Ellipse} alt="Ellipse" />
                         <div className={styles.userShopItemDescrItemLeftPrice}>
                             <img src={Crown} alt="Crown" />
