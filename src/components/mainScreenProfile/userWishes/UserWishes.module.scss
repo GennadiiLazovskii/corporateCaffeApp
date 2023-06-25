@@ -7,6 +7,7 @@
     padding-top: 40px;
     background-color: #F9F9FF;
     border-radius: 10px;
+
     p {
         margin-bottom: 15px;
         font-family: 'Noto Sans';
@@ -16,16 +17,23 @@
         line-height: 27px;
         color: #1E1584;
     }
+
     .userWishesImg {
         width: 298px;
         height: 320px;
         display: flex;
         flex-direction: column;
+
         img {
             width: 160px;
             height: 100%;
         }
     }
+
+    .userWishesImgItemAnimated {
+        animation: spin 10s infinite linear;
+    }
+
     .userWishesProgresWrap {
         display: flex;
         align-items: center;
@@ -34,12 +42,14 @@
         height: 100px;
         background: linear-gradient(180deg, #ACA4FF 0%, #7B6FFF 0.01%, #5242FF 99.98%);
         border-radius: 0px 0px 12px 12px;
+
         .userWishesProgresWrapImg {
             img {
                 width: 25px;
                 height: 25px;
             }
         }
+
         .userWishesProgresCollected {
             display: flex;
             flex-direction: column;
@@ -47,6 +57,7 @@
             width: 200px;
             height: 60px;
             margin-bottom: 15x;
+
             p {
                 font-family: 'Noto Sans';
                 font-style: normal;
@@ -54,11 +65,22 @@
                 font-size: 16px;
                 color: #FFFFFF;
             }
+
             .userWishesProgresCollectedItem {
                 width: 100%;
                 height: 30px;
                 display: flex;
             }
         }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
     }
 }

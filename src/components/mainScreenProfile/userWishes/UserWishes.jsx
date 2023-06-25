@@ -17,7 +17,7 @@ const UserWishes = ({ users }) => {
                     </div>
                     <div className={styles.userWishesImg}>
                         <div className={styles.userWishesImgItem}>
-                            <img src={Tshirt} alt="T-shirt" />
+                            <img className={styles.userWishesImgItemAnimated} src={Tshirt} alt="T-shirt" />
                         </div>
                         <div className={styles.userWishesImgItem}>
                             <img src={Ellipse} alt="T-shirt shadow" />
