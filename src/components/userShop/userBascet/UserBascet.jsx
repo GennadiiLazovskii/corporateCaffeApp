@@ -36,19 +36,19 @@ const UserBascet = ({ shop }) => {
             </div>
           </>
         )}
-        {orderShow && orderedProducts.map((product) => (
+        {orderShow && orderedProducts.length > 0 && (
           <>
-          <div className={styles.PurchaseConfirmation} key={product.id}>
-            <div className={styles.PurchaseConfirmationTitle}>
-              <p>Confirm purchase <br/> {product.nameProduct}</p>
-            </div>
-            <div className={styles.PurchaseConfirmationBtn} onClick={() => dispatch(show(false))}>
+            <div className={styles.purchaseConfirmation} key={orderedProducts[orderedProducts.length - 1].id}>
+              <div className={styles.purchaseConfirmationTitle}>
+                <p>Confirm purchase <br /> {orderedProducts[orderedProducts.length - 1].nameProduct}</p>
+              </div>
+              <div className={styles.purchaseConfirmationBtn} onClick={() => dispatch(show(false))}>
                 <p>Yes</p>
+              </div>
             </div>
-          </div>
           </>
-        ))}
-        { orderShow === false && orderedProducts.length > 0 && (
+        )}
+        {orderShow === false && orderedProducts.length > 0 && (
           <>
             <div className={styles.orderBascet}>
               <div className={styles.orderBascetTitle}>

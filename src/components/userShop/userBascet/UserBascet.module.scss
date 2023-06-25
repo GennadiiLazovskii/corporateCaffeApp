@@ -57,13 +57,13 @@
     }
   }
 
-  .PurchaseConfirmation {
+  .purchaseConfirmation {
     padding: 0 30px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
 
-    .PurchaseConfirmationTitle {
+    .purchaseConfirmationTitle {
       color: #1E1584;
       text-align: center;
       font-size: 20px;
@@ -72,7 +72,7 @@
       margin-bottom: 48px;
     }
 
-    .PurchaseConfirmationBtn {
+    .purchaseConfirmationBtn {
       cursor: pointer;
         display: flex;
         width: 520px;
