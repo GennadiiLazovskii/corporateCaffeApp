@@ -46,7 +46,7 @@ const UserShopCard = ({ shop }) => {
                             <p>{product.nameProduct}</p>
                         </div>
                         <div className={styles.userShopCardImg}>
-                            <img onClick={() => handleShowUserShopItemDescr(product.id)} src={product.productImage} alt="t-Shirt" />
+                            <img className={styles.userShopCardImgAnimated} onClick={() => handleShowUserShopItemDescr(product.id)} src={product.productImage} alt="t-Shirt" />
                             <img className={styles.userShopCardImgEllipse} src={Ellipse} alt="Ellipse" />
                         </div>
                         <div className={styles.userShopCardPrice}>
