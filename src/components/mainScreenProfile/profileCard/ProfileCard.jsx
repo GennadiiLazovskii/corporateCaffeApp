@@ -1,4 +1,7 @@
 import styles from "./ProfileCard.module.scss";
+import { Link, useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setProfileName } from "../../../features/header/headerSlice";
 import userCrown from "../../../img/user/crown.png";
 import Menu from "../../../img/user/main-menu.png";
 import Book from "../../../img/user/open-book.png";
@@ -8,13 +11,11 @@ import Test from "../../../img/user/test.png";
 import Trophy from "../../../img/user/trophy.png";
 import Profile from "../../../img/user/user.png";
 import Avatar from "../../../img/user/Avatar.png";
-import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setProfileName } from "../../../features/header/headerSlice";
 
 const ProfileCard = ({ users }) => {
 
     const dispatch = useDispatch();
+    const location = useLocation();
 
     return (
         <>
@@ -34,7 +35,9 @@ const ProfileCard = ({ users }) => {
                     </div>
                     <div className={styles.userBtnWrap}>
                         <Link to="/" className={styles.linkBtn}>
-                            <button onClick={() => dispatch(setProfileName('Main'))}>
+                            <button 
+                            className={location.pathname === "/" ? styles.active : ""} 
+                            onClick={() => dispatch(setProfileName('Main'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Menu} alt="Menu" />
                                 </div>
@@ -42,7 +45,9 @@ const ProfileCard = ({ users }) => {
                             </button>
                         </Link>
                         <Link to="/profile" className={styles.linkBtn}>
-                            <button onClick={() => dispatch(setProfileName('Profile'))}>
+                            <button 
+                            className={location.pathname === "/profile" ? styles.active : ""} 
+                            onClick={() => dispatch(setProfileName('Profile'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Profile} alt="Profile" />
                                 </div>
@@ -68,7 +73,9 @@ const ProfileCard = ({ users }) => {
                             <p>Testing</p>
                         </button>
                         <Link to="/library" className={styles.linkBtn}>
-                            <button onClick={() => dispatch(setProfileName('Library'))}>
+                            <button 
+                            className={location.pathname === "/library" ? styles.active : ""}
+                            onClick={() => dispatch(setProfileName('Library'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Book} alt="Library" />
                                 </div>
@@ -76,7 +83,9 @@ const ProfileCard = ({ users }) => {
                             </button>
                         </Link >
                         <Link to="/shop" className={styles.linkBtn} >
-                            <button onClick={() => dispatch(setProfileName('Shop'))}>
+                            <button 
+                            className={location.pathname === "/shop" ? styles.active : ""}
+                            onClick={() => dispatch(setProfileName('Shop'))}>
                                 <div className={styles.imgWrap}>
                                     <img src={Shop} alt="Shop" />
                                 </div>
