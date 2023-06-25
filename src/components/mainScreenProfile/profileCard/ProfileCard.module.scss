@@ -1,6 +1,6 @@
 .profileWrap {
     background: #fff;
-    width: 277px;
+    width: 267px;
     height: 100%;
     border-radius: 20px;
     margin: 0 auto;
@@ -73,11 +73,12 @@
 
 .linkBtn {
     text-decoration: none;
+    width: 100%;
 }
 
 .userBtnWrap {
     margin-top: 20px;
-    width: 278px;
+    width: 258px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -104,14 +105,14 @@
         .imgWrap {
             display: flex;
             align-items: center;
-            width: 44px;
-            height: 44px;
+            width: 40px;
+            height: 40px;
             background: rgba(114, 101, 251, 0.1);
             border-radius: 10px;
         }
         img {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
         }
         p {
             display: flex;
