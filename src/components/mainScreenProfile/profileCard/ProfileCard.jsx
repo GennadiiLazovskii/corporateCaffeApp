@@ -1,6 +1,6 @@
 import styles from "./ProfileCard.module.scss";
 import { Link, useLocation } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setProfileName } from "../../../features/header/headerSlice";
 import userCrown from "../../../img/user/crown.png";
 import Menu from "../../../img/user/main-menu.png";
@@ -12,10 +12,11 @@ import Trophy from "../../../img/user/trophy.png";
 import Profile from "../../../img/user/user.png";
 import Avatar from "../../../img/user/Avatar.png";
 
-const ProfileCard = ({ users }) => {
+const ProfileCard = () => {
 
     const dispatch = useDispatch();
     const location = useLocation();
+    const users = useSelector((state) => state.user.users);
 
     return (
         <>

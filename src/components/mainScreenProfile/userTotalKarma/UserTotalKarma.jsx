@@ -1,7 +1,11 @@
 import styles from './UserTotalKarma.module.scss';
 import Karma from '../../../img/user/karma.png';
+import { useSelector } from 'react-redux';
 
-const UserTotalKarma = ({ handleShowContestMonth, users }) => {
+const UserTotalKarma = ({ handleShowContestMonth }) => {
+
+    const users = useSelector((state) => state.user.users);
+
     return (
         <>
             {users.map(user => (

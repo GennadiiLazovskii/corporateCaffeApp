@@ -5,8 +5,9 @@ import { setModalContext } from "../../../features/buttonExit/buttonExitSlice";
 import { deleteProduct, show } from "../../../features/bascet/bascetSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const UserBascet = ({ shop }) => {
+const UserBascet = () => {
 
+  const shop = useSelector((state) => state.shop.shop);
   const orderId = useSelector((state) => state.order.order);
   const orderShow = useSelector((state) => state.order.show);
 

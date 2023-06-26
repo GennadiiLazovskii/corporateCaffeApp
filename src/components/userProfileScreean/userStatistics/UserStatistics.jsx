@@ -1,6 +1,9 @@
 import styles from "./UserStatistics.module.scss";
+import { useSelector } from "react-redux";
 
-const UserStatistics = ({ users }) => {
+const UserStatistics = () => {
+
+    const users = useSelector((state) => state.user.users);
 
     return (
         <>

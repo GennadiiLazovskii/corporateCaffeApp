@@ -10,8 +10,9 @@ import { addOrder, show } from '../../../features/bascet/bascetSlice.js';
 import { setModalContext } from '../../../features/buttonExit/buttonExitSlice';
 import UserBascet from '../userBascet/UserBascet';
 
-const UserShopCard = ({ shop }) => {
+const UserShopCard = () => {
 
+    const shop = useSelector((state) => state.shop.shop);
     const dispatchOrder = useDispatch();
     const cartStatus = useSelector((state) => state.modal.modalState);
 
@@ -64,7 +65,7 @@ const UserShopCard = ({ shop }) => {
                         <div className={styles.userBascetContainer}>
                             <div className={styles.userBascetblurBackground} />
                             <div className={styles.userBascet}>
-                                <UserBascet shop={shop} />
+                                <UserBascet/>
                             </div>
                         </div>
                     )}

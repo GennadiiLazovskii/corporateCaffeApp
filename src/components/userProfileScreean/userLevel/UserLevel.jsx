@@ -4,8 +4,11 @@ import LvlOne from "../../../img/Lvl/Lvl-1.png";
 import LvlTwo from "../../../img/Lvl/Lvl-2.png";
 import LvlThree from "../../../img/Lvl/Lvl-3.png";
 import LvlFour from "../../../img/Lvl/Lvl-4.png";
+import { useSelector } from "react-redux";
 
-const UserLevel = ({ users }) => {
+const UserLevel = () => {
+
+    const users = useSelector((state) => state.user.users);
 
     return (
         <>

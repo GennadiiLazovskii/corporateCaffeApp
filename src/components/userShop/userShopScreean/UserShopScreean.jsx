@@ -6,7 +6,7 @@ import UserBascet from '../userBascet/UserBascet.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { setModalContext } from '../../../features/buttonExit/buttonExitSlice.js';
 
-const UserShopScreean = ({ shop }) => {
+const UserShopScreean = () => {
 
     const dispatch = useDispatch();
     const cartStatus = useSelector((state) => state.modal.modalState);
@@ -19,12 +19,12 @@ const UserShopScreean = ({ shop }) => {
                     <img src={Delivery} alt="Delivery" />
                 </div>
             </div>
-            <UserShopCard shop={shop} />
+            <UserShopCard/>
             {cartStatus && (
                 <div className={styles.userBascetContainer}>
                     <div className={styles.userBascetblurBackground} />
                     <div className={styles.userBascet}>
-                        <UserBascet shop={shop}/>
+                        <UserBascet/>
                     </div>
                 </div>
             )}

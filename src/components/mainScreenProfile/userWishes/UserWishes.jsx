@@ -3,9 +3,11 @@ import Tshirt from "../../../img/user/t-shirt.png";
 import Ellipse from "../../../img/user/Ellipse.png";
 import Crown from "../../../img/user/crown.png";
 import UserWishesProgres from "./userWishesProgres/userWishesProgres";
+import { useSelector } from "react-redux";
 
-const UserWishes = ({ users }) => {
+const UserWishes = () => {
     
+    const users = useSelector((state) => state.user.users);
     const progress = users.map((user) => (user.money / 200) * 100);
 
     return (

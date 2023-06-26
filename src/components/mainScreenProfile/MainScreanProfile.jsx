@@ -9,7 +9,7 @@ import { modalReducer } from '../reducers/modalReducer';
 import { useReducer } from 'react'
 import { showContestMonth, showDescrActiveTask, hideModal } from '../actions/modalActions';
 
-const MainScreanProfile = ({users}) => {
+const MainScreanProfile = () => {
 
     const initialState = {
         openContestMonth: false,
@@ -38,8 +38,8 @@ const MainScreanProfile = ({users}) => {
                 <UserAchievements handleShowDescrActiveTask={handleShowDescrActiveTask} />
             </div>
             <div className={styles.mainScreanProfileRight}>
-                <UserTotalKarma handleShowContestMonth={handleShowContestMonth} users={users} />
-                <UserWishes users={users} />
+                <UserTotalKarma handleShowContestMonth={handleShowContestMonth} />
+                <UserWishes/>
             </div>
             {state.openContestMonth && (
                 <div className={styles.contestMonthContainer}>

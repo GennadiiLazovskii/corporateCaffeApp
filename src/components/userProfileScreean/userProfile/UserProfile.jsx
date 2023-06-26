@@ -2,8 +2,12 @@ import styles from "./UserProfile.module.scss";
 import Crown from "../../../img/user/crown.png";
 import Karma from "../../../img/user/karma.png";
 import Avatar from "../../../img/user/Avatar.png";
+import { useSelector } from "react-redux";
 
-const UserProfile = ({ users }) => {
+const UserProfile = () => {
+
+    const users = useSelector((state) => state.user.users);
+
     return (
         <>
             {users.map((user) => (

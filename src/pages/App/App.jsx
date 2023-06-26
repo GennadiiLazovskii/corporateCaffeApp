@@ -8,14 +8,12 @@ import ProfileCard from '../../components/mainScreenProfile/profileCard/ProfileC
 import ItemLibraryDescr from '../../components/userLibrary/itemLibraryDescr/ItemLibraryDescr';
 import UserShopScreean from '../../components/userShop/userShopScreean/UserShopScreean.jsx';
 import { useEffect} from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { fetchUsers } from '../../features/user/userSlice';
 import { fetchShop } from '../../features/shop/shopSlice';
 
 const App = () => {
 
-    const user = useSelector((state) => state.user.users);
-    const shop = useSelector((state) => state.shop.shop);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -27,13 +25,13 @@ const App = () => {
         <Router>
             <Header/>
             <div className={styles.profileCard}>
-                <ProfileCard users={user} />
+                <ProfileCard/>
                 <Routes>
-                    <Route path="/" element={<MainScreanProfile users={user}/>} />
-                    <Route path="/profile" element={<UserProfileScreean users={user} />} />
+                    <Route path="/" element={<MainScreanProfile/>} />
+                    <Route path="/profile" element={<UserProfileScreean/>} />
                     <Route path="/library" element={<MainLibrary />} />
                     <Route path="/library/description" element={<ItemLibraryDescr/>} />
-                    <Route path="/shop" element={<UserShopScreean shop={shop}/>}/>
+                    <Route path="/shop" element={<UserShopScreean/>}/>
                 </Routes>
             </div>
         </Router>
