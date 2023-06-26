@@ -7,29 +7,31 @@ import MainLibrary from '../../components/userLibrary/mainLibrary/MainLibrary';
 import ProfileCard from '../../components/mainScreenProfile/profileCard/ProfileCard.jsx';
 import ItemLibraryDescr from '../../components/userLibrary/itemLibraryDescr/ItemLibraryDescr';
 import UserShopScreean from '../../components/userShop/userShopScreean/UserShopScreean.jsx';
-import { useEffect, useState } from 'react';
-import ShopService from '../../service/shop.service';
+import { useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchUsers } from '../../features/user/userSlice';
+import { fetchShop } from '../../features/shop/shopSlice';
 
 const App = () => {
 
-    const [shop, setShop] = useState([]);
+    // const [shop, setShop] = useState([]);
     const user = useSelector((state) => state.user.users);
+    const shop = useSelector((state) => state.shop.shop);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(fetchUsers());
+        dispatch(fetchShop());
     }, [dispatch])
 
-    useEffect(() => {
+    // useEffect(() => {
         
-        const fetcDate = async () => {
-            const response = await ShopService.getAll()
-            setShop(response)
-        }
-        fetcDate();
-    }, [])
+    //     const fetcDate = async () => {
+    //         const response = await ShopService.getAll()
+    //         setShop(response)
+    //     }
+    //     fetcDate();
+    // }, [])
 
     return (
         <Router>
