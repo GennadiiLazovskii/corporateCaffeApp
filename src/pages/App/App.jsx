@@ -14,7 +14,6 @@ import { fetchShop } from '../../features/shop/shopSlice';
 
 const App = () => {
 
-    // const [shop, setShop] = useState([]);
     const user = useSelector((state) => state.user.users);
     const shop = useSelector((state) => state.shop.shop);
     const dispatch = useDispatch();
@@ -23,15 +22,6 @@ const App = () => {
         dispatch(fetchUsers());
         dispatch(fetchShop());
     }, [dispatch])
-
-    // useEffect(() => {
-        
-    //     const fetcDate = async () => {
-    //         const response = await ShopService.getAll()
-    //         setShop(response)
-    //     }
-    //     fetcDate();
-    // }, [])
 
     return (
         <Router>
