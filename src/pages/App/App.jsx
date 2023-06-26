@@ -7,24 +7,20 @@ import MainLibrary from '../../components/userLibrary/mainLibrary/MainLibrary';
 import ProfileCard from '../../components/mainScreenProfile/profileCard/ProfileCard.jsx';
 import ItemLibraryDescr from '../../components/userLibrary/itemLibraryDescr/ItemLibraryDescr';
 import UserShopScreean from '../../components/userShop/userShopScreean/UserShopScreean.jsx';
-import UserService from '../../service/user.service';
 import { useEffect, useState } from 'react';
 import ShopService from '../../service/shop.service';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchUsers } from '../../features/user/userSlice';
 
 const App = () => {
 
-    const [user, setUser] = useState([]);
     const [shop, setShop] = useState([]);
-    // const [profileName, setProfileName] = useState('Main')
+    const user = useSelector((state) => state.user.users);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        
-        const fetcDate = async () => {
-            const response = await UserService.getAll()
-            setUser(response)
-        }
-        fetcDate();
-    }, [])
+        dispatch(fetchUsers());
+    }, [dispatch])
 
     useEffect(() => {
         
@@ -34,10 +30,6 @@ const App = () => {
         }
         fetcDate();
     }, [])
-
-    // const updateProfileName = (name) => {
-    //     setProfileName(name)
-    // }
 
     return (
         <Router>
