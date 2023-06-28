@@ -1,13 +1,14 @@
 import { modalReducer } from '../../reducers/modalReducer';
 import { showUserShopItemDescr, hideUserShopItemDescr } from '../../actions/modalActions';
 import { useReducer, useState } from 'react';
-import styles from "./UserShopCard.module.scss";
-import Crown from "../../../img/user/crown.png";
-import Ellipse from "../../../img/user/Ellipse.png"
-import UserShopItemDescr from '../userShopItemDescr/UserShopItemDescr';
 import { useDispatch, useSelector } from 'react-redux';
 import { addOrder, show } from '../../../features/bascet/bascetSlice.js';
 import { setModalContext } from '../../../features/buttonExit/buttonExitSlice';
+import styles from "./UserShopCard.module.scss";
+import Crown from "../../../img/user/crown.png";
+import Ellipse from "../../../img/user/Ellipse.png"
+import Prize from "../../../img/shop/prize.png";
+import UserShopItemDescr from '../userShopItemDescr/UserShopItemDescr';
 import UserBascet from '../userBascet/UserBascet';
 
 const UserShopCard = () => {
@@ -47,7 +48,19 @@ const UserShopCard = () => {
                             <p>{product.nameProduct}</p>
                         </div>
                         <div className={styles.userShopCardImg}>
-                            <img className={styles.userShopCardImgAnimated} onClick={() => handleShowUserShopItemDescr(product.id)} src={product.productImage} alt="t-Shirt" />
+                            {product.productImage &&
+                                <img className={styles.userShopCardImgAnimated}
+                                    onClick={() => handleShowUserShopItemDescr(product.id)}
+                                    src={product.productImage}
+                                    alt="t-Shirt" />
+                            }
+                            {
+                                product.productImage.length === 0 &&
+                                <img className={styles.userShopCardImgAnimated}
+                                    onClick={() => handleShowUserShopItemDescr(product.id)}
+                                    src={Prize}
+                                    alt="Prize" />
+                            }
                             <img className={styles.userShopCardImgEllipse} src={Ellipse} alt="Ellipse" />
                         </div>
                         <div className={styles.userShopCardPrice}>
@@ -65,7 +78,7 @@ const UserShopCard = () => {
                         <div className={styles.userBascetContainer}>
                             <div className={styles.userBascetblurBackground} />
                             <div className={styles.userBascet}>
-                                <UserBascet/>
+                                <UserBascet />
                             </div>
                         </div>
                     )}
