@@ -1,9 +1,9 @@
 import styles from './CustomButton.module.scss';
 
-const CustomButton = (title, click) => {
+const CustomButton = ({title, onClick}) => {
   return (
-    <div className={styles.container}>
-      <button className={styles.btn} onClick={click}>{title}</button>
+    <div className={styles.btn}>
+      <button onClick={onClick}>{title}</button>
     </div>
   )
 }

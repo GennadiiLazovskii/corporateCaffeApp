@@ -1,3 +1,4 @@
+import CustomButton from '../../customButton/CustomButton.jsx';
 import styles from './UserGoal.module.scss';
 
 const UserGoal = () => {
@@ -7,9 +8,9 @@ const UserGoal = () => {
             <div className={styles.userGoalItem}>
                 <h2>Goal</h2>
                     <div className={styles.userGoaBtnItem}>
-                        <button className={styles.userGoaBtn}>Active</button>
-                        <button className={styles.userGoaBtn}>Archival</button>
-                        <button className={styles.userGoaBtn}>New</button>
+                        <CustomButton title={"Active"} onClick={() => {}}/>
+                        <CustomButton title={"Archival"} onClick={() => {}}/>
+                        <CustomButton title={"New"} onClick={() => {}}/>
                     </div>
             </div>
         </div>
