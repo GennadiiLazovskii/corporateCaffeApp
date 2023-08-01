@@ -1,3 +1,4 @@
+import CustomButton from '../../customButton/CustomButton.jsx';
 import styles from './btnLibrary.module.scss';
 
 const BtnLibrary = () => {
@@ -7,9 +8,9 @@ const BtnLibrary = () => {
             <div className={styles.btnLibraryItem}>
                 <h2>Library</h2>
                     <div className={styles.btnLibraryBtnItem}>
-                        <button className={styles.btnLibraryBtn}>About coffee</button>
-                        <button className={styles.btnLibraryBtn}>About company</button>
-                        <button className={styles.btnLibraryBtn}>Onboarding</button>
+                        <CustomButton title={"About coffee"} onClick={() => {}}/>
+                        <CustomButton title={"About company"} onClick={() => {}}/>
+                        <CustomButton title={"Onboarding"} onClick={() => {}}/>
                     </div>
             </div>
         </div>
