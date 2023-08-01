@@ -1,3 +1,4 @@
+import CustomButton from '../../customButton/CustomButton';
 import styles from './UserShopBtn.module.scss';
 
 const UserShopBtn = () => {
@@ -7,9 +8,9 @@ const UserShopBtn = () => {
             <div className={styles.userShopBtnItem}>
                 <h2>Gift shop</h2>
                     <div className={styles.userShopBtnItemWrap}>
-                        <button className={styles.userShopBtn}>New</button>
-                        <button className={styles.userShopBtn}>Education</button>
-                        <button className={styles.userShopBtn}>Cloth</button>
+                        <CustomButton title={'New'} onClick={() => {}}/>
+                        <CustomButton title={'Education'} onClick={() => {}}/>
+                        <CustomButton title={'Cloth'} onClick={() => {}}/>
                     </div>
             </div>
         </div>
