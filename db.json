@@ -124,5 +124,55 @@
       "productDescription": "The T-shirt is made of wear-resistant material and can withstand repeated washes after which it does not cough and retains its color.\nWide range of sizes: XS, S, M, L, XL, XXL, XXXL.\nDensity: 200 g/m2\nThe material of men's T-shirts is wear-resistant and withstands repeated washings while retaining color and does not cough.",
       "price": 350
     }
-  ]  
+  ],
+  "library": [
+    {
+      "id": 1,
+      "libraryDescrHeader": "Types of roasting coffee beans",
+      "libraryTime": 5,
+      "libraryImage1": "https://m.gemini.ua/wp-content/uploads/2019/02/kofe-objarka-1024x682.jpg",
+      "libraryImage2": "https://joinposter.com/i/site/blog/objarka-kofe1.jpg",
+      "libraryDescription": "Roasting is one of the most important steps in coffee production. It consists in the heat treatment of coffee beans, due to which coffee acquires a certain taste and aroma. During roasting, a large number of chemical reactions occur, leading to the formation of complex compounds that form the coffee potential. Depending on the temperature, different compounds can be formed. By controlling the different stages of roasting, you can adjust the taste of the coffee."
+    },
+    {
+      "id": 2,
+      "libraryDescrHeader": "History of Coffee",
+      "libraryTime": 7,
+      "libraryImage1": "https://example.com/history_of_coffee_image1.jpg",
+      "libraryImage2": "https://example.com/history_of_coffee_image2.jpg",
+      "libraryDescription": "Coffee has a rich and fascinating history that spans centuries and various cultures. From its origins in Ethiopia to its global popularity today, coffee has played a significant role in shaping societies and social interactions. Learn about the journey of coffee and its impact on the world."
+    },
+    {
+      "id": 3,
+      "libraryDescrHeader": "Different Coffee Brewing Methods",
+      "libraryTime": 6,
+      "libraryImage1": "https://example.com/brewing_methods_image1.jpg",
+      "libraryImage2": "https://example.com/brewing_methods_image2.jpg",
+      "libraryDescription": "Explore the diverse world of coffee brewing methods. From pour-over to espresso, French press to AeroPress, there are numerous ways to prepare your perfect cup of coffee. Discover the unique characteristics and techniques behind each method and find your favorite."
+    },
+    {
+      "id": 4,
+      "libraryDescrHeader": "Coffee Bean Varieties",
+      "libraryTime": 4,
+      "libraryImage1": "https://example.com/bean_varieties_image1.jpg",
+      "libraryImage2": "https://example.com/bean_varieties_image2.jpg",
+      "libraryDescription": "Not all coffee beans are created equal. Learn about the different coffee bean varieties and their distinct flavors, aromas, and growing regions. From Arabica to Robusta, each variety brings its own characteristics to the cup, influencing the taste and overall coffee experience."
+    },
+    {
+      "id": 5,
+      "libraryDescrHeader": "Creating Latte Art",
+      "libraryTime": 8,
+      "libraryImage1": "https://example.com/latte_art_image1.jpg",
+      "libraryImage2": "https://example.com/latte_art_image2.jpg",
+      "libraryDescription": "Take your coffee presentation to the next level by mastering the art of creating intricate latte designs. Learn techniques for steaming milk, pouring latte art patterns, and impressing your friends and customers with beautifully crafted coffee beverages."
+    },
+    {
+      "id": 6,
+      "libraryDescrHeader": "Coffee and Health",
+      "libraryTime": 5,
+      "libraryImage1": "https://example.com/coffee_health_image1.jpg",
+      "libraryImage2": "https://example.com/coffee_health_image2.jpg",
+      "libraryDescription": "Explore the relationship between coffee and health. Learn about the potential benefits and risks of consuming coffee, its effects on the body, and how to make informed choices to enjoy coffee as part of a balanced lifestyle."
+    }
+  ]
 }
