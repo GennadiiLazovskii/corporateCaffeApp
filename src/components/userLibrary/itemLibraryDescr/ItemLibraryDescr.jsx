@@ -1,10 +1,18 @@
-import { Link } from "react-router-dom";
-import styles from "./ItemLibraryDescr.module.scss";
+import { useSelector } from 'react-redux';
+import { Link, useParams } from 'react-router-dom';
+import styles from './ItemLibraryDescr.module.scss';
 import Back from "../../../img/header/arowLeft.png";
-import Coffee1 from "../../../img/libraryImg/1coffee.jpeg";
-import Coffee2 from "../../../img/libraryImg/2coffee.png";
 
 const ItemLibraryDescr = () => {
+    const { id } = useParams();
+    const libraryItems = useSelector(state => state.library.items);
+
+    const selectedLibraryItem = libraryItems.find(item => item.id === parseInt(id));
+
+    if (!selectedLibraryItem) {
+        return <p>Item not found</p>;
+    }
+
     return (
         <div className={styles.itemLibraryDescr}>
             <div className={styles.itemLibraryDescrBack}>
@@ -12,26 +20,20 @@ const ItemLibraryDescr = () => {
                     <img src={Back} alt="Back" />
                 </Link>
             </div>
-            <div className={styles.itemLibraryDescrHeader}>
-                <p>Types of roasting coffee beans</p>
-            </div>
-            <div className={styles.itemLibraryDescrTime}>
-                <p>Reading time: 5 minutes</p>
-            </div>
-            <div className={styles.itemLibraryDescrText}>
-                <p>
-                    Roasting is one of the most important steps in coffee production. It
-                    consists in the heat treatment of coffee beans, due to which coffee
-                    acquires a certain taste and aroma. During roasting, a large number of
-                    chemical reactions occur, leading to the formation of complex
-                    compounds that form the coffee potential. Depending on the
-                    temperature, different compounds can be formed. By controlling the
-                    different stages of roasting, you can adjust the taste of the coffee.
-                </p>
-            </div>
-            <div className={styles.itemLibraryDescrImg}>
-                <img src={Coffee1} alt="Coffee1" />
-                <img src={Coffee2} alt="Coffee2" />
+            <div key={selectedLibraryItem.id}>
+                <div className={styles.itemLibraryDescrHeader}>
+                    <p>{selectedLibraryItem.libraryDescrHeader}</p>
+                </div>
+                <div className={styles.itemLibraryDescrTime}>
+                    <p>Reading time: {selectedLibraryItem.libraryTime} minutes</p>
+                </div>
+                <div className={styles.itemLibraryDescrText}>
+                    <p>{selectedLibraryItem.libraryDescription}</p>
+                </div>
+                <div className={styles.itemLibraryDescrImg}>
+                    <img src={selectedLibraryItem.libraryImage1} alt={`Image1_${selectedLibraryItem.id}`} />
+                    <img src={selectedLibraryItem.libraryImage2} alt={`Image2_${selectedLibraryItem.id}`} />
+                </div>
             </div>
         </div>
     );

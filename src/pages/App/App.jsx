@@ -11,6 +11,7 @@ import { useEffect} from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUsers } from '../../features/user/userSlice';
 import { fetchShop } from '../../features/shop/shopSlice';
+import { fetchLibrary } from '../../features/library/librarySlice';
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
     useEffect(() => {
         dispatch(fetchUsers());
         dispatch(fetchShop());
+        dispatch(fetchLibrary());
     }, [dispatch])
 
     return (
@@ -30,7 +32,7 @@ const App = () => {
                     <Route path="/" element={<MainScreanProfile/>} />
                     <Route path="/profile" element={<UserProfileScreean/>} />
                     <Route path="/library" element={<MainLibrary />} />
-                    <Route path="/library/description" element={<ItemLibraryDescr/>} />
+                    <Route path="/library/description/:id" element={<ItemLibraryDescr/>} />
                     <Route path="/shop" element={<UserShopScreean/>}/>
                 </Routes>
             </div>
