@@ -138,40 +138,40 @@
       "id": 2,
       "libraryDescrHeader": "History of Coffee",
       "libraryTime": 7,
-      "libraryImage1": "https://example.com/history_of_coffee_image1.jpg",
-      "libraryImage2": "https://example.com/history_of_coffee_image2.jpg",
+      "libraryImage1": "https://cdn.thecollector.com/wp-content/uploads/2022/10/history-of-coffee-mocha-port.jpg",
+      "libraryImage2": "https://bushidocoffee.co.uk/wp-content/uploads/2021/12/History-of-coffee-scaled.jpg",
       "libraryDescription": "Coffee has a rich and fascinating history that spans centuries and various cultures. From its origins in Ethiopia to its global popularity today, coffee has played a significant role in shaping societies and social interactions. Learn about the journey of coffee and its impact on the world."
     },
     {
       "id": 3,
       "libraryDescrHeader": "Different Coffee Brewing Methods",
       "libraryTime": 6,
-      "libraryImage1": "https://example.com/brewing_methods_image1.jpg",
-      "libraryImage2": "https://example.com/brewing_methods_image2.jpg",
+      "libraryImage1": "https://eadn-wc03-5074352.nxedge.io/wp-content/uploads/2021/08/Methods-Transparent-1.png",
+      "libraryImage2": "https://www.bluebird-design.com/userdata/public/gfx/9386a0a69f99a7a1061b011736edc64a.jpg",
       "libraryDescription": "Explore the diverse world of coffee brewing methods. From pour-over to espresso, French press to AeroPress, there are numerous ways to prepare your perfect cup of coffee. Discover the unique characteristics and techniques behind each method and find your favorite."
     },
     {
       "id": 4,
       "libraryDescrHeader": "Coffee Bean Varieties",
       "libraryTime": 4,
-      "libraryImage1": "https://example.com/bean_varieties_image1.jpg",
-      "libraryImage2": "https://example.com/bean_varieties_image2.jpg",
+      "libraryImage1": "https://coffeeaffection.com/wp-content/uploads/2019/03/types_of_coffee_beans.jpg",
+      "libraryImage2": "https://www.homecoffeemachines.ie/cdn/shop/articles/coffee_beans.png?v=1648141678",
       "libraryDescription": "Not all coffee beans are created equal. Learn about the different coffee bean varieties and their distinct flavors, aromas, and growing regions. From Arabica to Robusta, each variety brings its own characteristics to the cup, influencing the taste and overall coffee experience."
     },
     {
       "id": 5,
       "libraryDescrHeader": "Creating Latte Art",
       "libraryTime": 8,
-      "libraryImage1": "https://example.com/latte_art_image1.jpg",
-      "libraryImage2": "https://example.com/latte_art_image2.jpg",
+      "libraryImage1": "https://blogstudio.s3.amazonaws.com/barista-swag/4cd62d949a595c54acfbc32a26c18fb8.jpg",
+      "libraryImage2": "https://theheartybrew.com/wp-content/uploads/2021/05/Basic_LatteArt_cover.jpg.png",
       "libraryDescription": "Take your coffee presentation to the next level by mastering the art of creating intricate latte designs. Learn techniques for steaming milk, pouring latte art patterns, and impressing your friends and customers with beautifully crafted coffee beverages."
     },
     {
       "id": 6,
       "libraryDescrHeader": "Coffee and Health",
       "libraryTime": 5,
-      "libraryImage1": "https://example.com/coffee_health_image1.jpg",
-      "libraryImage2": "https://example.com/coffee_health_image2.jpg",
+      "libraryImage1": "https://www.compatible-capsules.com/wp-content/uploads/2018/06/health-benefits-of-coffee.jpg",
+      "libraryImage2": "https://pub.mdpi-res.com/beverages/beverages-05-00011/article_deploy/html/images/beverages-05-00011-ag.png?1571029765",
       "libraryDescription": "Explore the relationship between coffee and health. Learn about the potential benefits and risks of consuming coffee, its effects on the body, and how to make informed choices to enjoy coffee as part of a balanced lifestyle."
     }
   ]

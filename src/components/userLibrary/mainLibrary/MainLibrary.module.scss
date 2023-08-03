@@ -2,11 +2,12 @@
     width: 100%;
     height: 660px;
     .mainLibraryWrap {
+        padding-bottom: 20px;
         overflow-y: auto;
         overflow-x: hidden;
         display: flex;
         flex-wrap: wrap;
-        width: 960px;
+        width: 935px;
         height: 675px;
         background: linear-gradient(180deg, #F9F9FF 0%, #FFFFFF 0%, #F2F1FF 100.05%);
         border-radius: 12px;
@@ -27,7 +28,7 @@
     
     .mainLibraryItem {
         width: 440px;
-        height: 269px;
+        // height: 269px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -36,7 +37,7 @@
         background: rgba(114, 101, 251, 0.1);
         border-radius: 12px;
         .mainLibraryDescr {
-            margin: 20px;
+            margin: 20px 0px;
             width: 100%;
             display: flex;
             justify-content: space-evenly;
@@ -80,11 +81,12 @@
         }
         
         .mainLibraryImg {
+            margin: 0;
             img {
                 border-bottom-left-radius: 12px;
                 border-bottom-right-radius: 12px;
                 width: 100%;
-                height: 100%;
+                height: 250px;
             }
         }
     }
