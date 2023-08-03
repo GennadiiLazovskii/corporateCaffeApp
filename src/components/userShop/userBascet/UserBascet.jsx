@@ -16,7 +16,12 @@ const UserBascet = () => {
   const orderedProducts = shop.filter((product) => orderId.includes(product.id));
 
   const handleDeleteToCart = (productId) => {
-    dispatch(deleteProduct(productId))
+    dispatch(deleteProduct(productId));
+  }
+
+  const deleteProductCart = (productId) => {
+    dispatch(show(false));
+    handleDeleteToCart(productId);
   }
 
   return (
@@ -43,8 +48,9 @@ const UserBascet = () => {
               <div className={styles.purchaseConfirmationTitle}>
                 <p>Confirm purchase <br /> {orderedProducts[orderedProducts.length - 1].nameProduct}</p>
               </div>
-              <div className={styles.purchaseConfirmationBtn} onClick={() => dispatch(show(false))}>
-                <p>Yes</p>
+              <div className={styles.purchaseConfirmationBtn}>
+                <p onClick={() => dispatch(show(false))} className={styles.purchaseConfirmationBtnGren}>Yes</p>
+                <p onClick={() => deleteProductCart(orderedProducts[orderedProducts.length - 1].id)} className={styles.purchaseConfirmationBtnRed}>No</p>
               </div>
             </div>
           </>

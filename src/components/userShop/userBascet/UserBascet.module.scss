@@ -73,18 +73,36 @@
     }
 
     .purchaseConfirmationBtn {
-      cursor: pointer;
-        display: flex;
-        width: 520px;
-        height: 60px;
-        padding: 12.683px 16.911px;
-        justify-content: center;
-        align-items: center;
-        gap: 31.707px;
-        border-radius: 12px;
-        background: linear-gradient(180deg, #26E27C 0%, #15D36C 100%);
-        p {
+      display: flex;
+      gap: 50px;
+        .purchaseConfirmationBtnGren {
+          cursor: pointer;
+          display: flex;
+          width: 250px;
+          height: 60px;
+          padding: 12.683px 16.911px;
+          justify-content: center;
+          align-items: center;
+          gap: 31.707px;
+          border-radius: 12px;
+          background: linear-gradient(180deg, #26E27C 0%, #15D36C 100%);
           color: #1E1584;
+          font-size: 16px;
+          font-family: Noto Sans;
+          line-height: 180%;
+        }
+        .purchaseConfirmationBtnRed {
+          cursor: pointer;
+          display: flex;
+          width: 250px;
+          height: 60px;
+          padding: 12.683px 16.911px;
+          justify-content: center;
+          align-items: center;
+          gap: 31.707px;
+          border-radius: 12px;
+          background: red;
+          color: white;
           font-size: 16px;
           font-family: Noto Sans;
           line-height: 180%;
