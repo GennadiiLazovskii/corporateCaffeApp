@@ -9,7 +9,14 @@ import { setModalContext } from '../../../features/buttonExit/buttonExitSlice.js
 const UserShopScreean = () => {
 
     const dispatch = useDispatch();
+
+    const shop = useSelector((state) => state.shop.shop);
+    const orderId = useSelector((state) => state.order.order);
     const cartStatus = useSelector((state) => state.modal.modalState);
+
+    const orderedProducts = shop.filter((product) => orderId.includes(product.id));
+
+    const amountBascet = orderedProducts.length;
 
     return (
         <div className={styles.userShopScreean}>
@@ -17,6 +24,7 @@ const UserShopScreean = () => {
                 <UserShopBtn />
                 <div className={styles.userShopScreeanDeliv} onClick={() => dispatch(setModalContext(true))}>
                     <img src={Delivery} alt="Delivery" />
+                    {amountBascet > 0 && <p>{amountBascet}</p>}
                 </div>
             </div>
             <UserShopCard/>

@@ -14,6 +14,18 @@
     display: flex;
 
     .userShopScreeanDeliv {
+        display: flex;
+        p {
+            display: flex;
+            align-content: space-around;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+        }
         img {
             width: 60px;
             height: 60px;
